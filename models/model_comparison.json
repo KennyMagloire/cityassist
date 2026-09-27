@@ -1,0 +1,22 @@
+[
+  {
+    "name": "baseline (most common)",
+    "accuracy": 0.35628744155965164,
+    "size_mb": 0.000616
+  },
+  {
+    "name": "decision tree",
+    "accuracy": 0.5704545329979008,
+    "size_mb": 0.27511
+  },
+  {
+    "name": "random forest",
+    "accuracy": 0.5763958542293547,
+    "size_mb": 29.361668
+  },
+  {
+    "name": "gradient boosting",
+    "accuracy": 0.5867822045371086,
+    "size_mb": 1.302103
+  }
+]

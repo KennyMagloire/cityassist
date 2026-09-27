@@ -1,0 +1,2277 @@
+{
+  "Sewer: Blocked/Overflow": {
+    "department": "Distribution Services",
+    "agreement": 0.9992,
+    "ambiguous": true
+  },
+  "No Power": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": true
+  },
+  "No Water WMD": {
+    "department": "Commercial Services",
+    "agreement": 0.9794,
+    "ambiguous": true
+  },
+  "Street Lights - All Lights Out": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9999,
+    "ambiguous": true
+  },
+  "Street Lights - Single Light Out": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": true
+  },
+  "Customer : Reconnection Request": {
+    "department": "Commercial Services",
+    "agreement": 0.9991,
+    "ambiguous": true
+  },
+  "Damaged Bin - 240L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Stolen Bins - 240L": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9998,
+    "ambiguous": true
+  },
+  "Broken Leading": {
+    "department": "Distribution Services",
+    "agreement": 0.9742,
+    "ambiguous": true
+  },
+  "Pothole&Defect Road Foot Bic Way/Kerbs": {
+    "department": "Roads Infrastructure Management",
+    "agreement": 0.9964,
+    "ambiguous": true
+  },
+  "No Water Supply": {
+    "department": "Distribution Services",
+    "agreement": 0.8507,
+    "ambiguous": true
+  },
+  "Leak at Water Meter / Stopcock": {
+    "department": "Distribution Services",
+    "agreement": 0.9328,
+    "ambiguous": true
+  },
+  "Leak at WMD Meter": {
+    "department": "Commercial Services",
+    "agreement": 0.9355,
+    "ambiguous": true
+  },
+  "Non-Collection of 240L Bin": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9998,
+    "ambiguous": true
+  },
+  "Plumbing": {
+    "department": "Home Ownership Transfer, Tenancy Management and Staff Housing",
+    "agreement": 0.9924,
+    "ambiguous": true
+  },
+  "Leak In Road/ Pavement/ Underground": {
+    "department": "Distribution Services",
+    "agreement": 0.9836,
+    "ambiguous": true
+  },
+  "Burst Pipe": {
+    "department": "Distribution Services",
+    "agreement": 0.9862,
+    "ambiguous": true
+  },
+  "E - Billing Invoices": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Customer : Meter Reading/Consumption": {
+    "department": "Commercial Services",
+    "agreement": 0.9417,
+    "ambiguous": true
+  },
+  "Illegal Dumping": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9282,
+    "ambiguous": true
+  },
+  "Empty Septic Tank": {
+    "department": "Distribution Services",
+    "agreement": 0.9983,
+    "ambiguous": true
+  },
+  "Suspect Tampering": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "PPM Display Blank": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "PPM Faulty Mode": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Internal : Meter Related Queries": {
+    "department": "Commercial Services",
+    "agreement": 0.9473,
+    "ambiguous": true
+  },
+  "Escalated Query - Level 1": {
+    "department": "Customer Relations",
+    "agreement": 0.9994,
+    "ambiguous": true
+  },
+  "Water Run to Waste": {
+    "department": "Distribution Services",
+    "agreement": 0.9752,
+    "ambiguous": true
+  },
+  "Tree Trimming / Pruning": {
+    "department": "Recreation and Parks",
+    "agreement": 0.9992,
+    "ambiguous": true
+  },
+  "Carpentry": {
+    "department": "Home Ownership Transfer, Tenancy Management and Staff Housing",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "WMD: Meter: Damaged/Faulty": {
+    "department": "Commercial Services",
+    "agreement": 0.9759,
+    "ambiguous": true
+  },
+  "PPM Rejecting Code": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Meter Replacement Project": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "PPM Faulty (Enter detailed description)": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Low Water Pressure": {
+    "department": "Distribution Services",
+    "agreement": 0.8276,
+    "ambiguous": true
+  },
+  "Electrical": {
+    "department": "Home Ownership Transfer, Tenancy Management and Staff Housing",
+    "agreement": 0.9992,
+    "ambiguous": true
+  },
+  "Block Pipe/Chan/Canal/Drain/Gully/Manh": {
+    "department": "Roads Infrastructure Management",
+    "agreement": 0.9987,
+    "ambiguous": true
+  },
+  "AWS: Existing Installation": {
+    "department": "Technical Services",
+    "agreement": 0.9987,
+    "ambiguous": true
+  },
+  "Maintenance of Property  Technical MD": {
+    "department": "Revenue",
+    "agreement": 0.9979,
+    "ambiguous": true
+  },
+  "Phase Missing": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Reconnect (Non - Payment)": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.996,
+    "ambiguous": true
+  },
+  "Dunning Investigations / Final Accounts": {
+    "department": "Revenue",
+    "agreement": 0.9962,
+    "ambiguous": true
+  },
+  "Sparks on Pole": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Customer : Phone in Readings": {
+    "department": "Commercial Services",
+    "agreement": 0.972,
+    "ambiguous": true
+  },
+  "Debit Order - Changes / Terminations": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Customer : Rebate Requests": {
+    "department": "Commercial Services",
+    "agreement": 0.9658,
+    "ambiguous": true
+  },
+  "Tree Removal": {
+    "department": "Recreation and Parks",
+    "agreement": 0.9982,
+    "ambiguous": true
+  },
+  "Indigent Application": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Customer : Account Adjustment Queries": {
+    "department": "Commercial Services",
+    "agreement": 0.9606,
+    "ambiguous": true
+  },
+  "Street Sweeping": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9893,
+    "ambiguous": true
+  },
+  "Mowing": {
+    "department": "Recreation and Parks",
+    "agreement": 0.9944,
+    "ambiguous": true
+  },
+  "Wires Down": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9997,
+    "ambiguous": true
+  },
+  "Recycling Bin Application Form": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "DO NOT USE: Meter Aqualoc Fault": {
+    "department": "Commercial Services",
+    "agreement": 0.9677,
+    "ambiguous": true
+  },
+  "Debit Order- 7th,15th and Last day Month": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Meter:  Damaged / Faulty": {
+    "department": "Distribution Services",
+    "agreement": 0.5813,
+    "ambiguous": true
+  },
+  "WMD Open Flow Request": {
+    "department": "Commercial Services",
+    "agreement": 0.792,
+    "ambiguous": true
+  },
+  "Manhole Cover/Gully Grid": {
+    "department": "Roads Infrastructure Management",
+    "agreement": 0.9971,
+    "ambiguous": true
+  },
+  "Incorrect Reading/Request Actual Reading": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9943,
+    "ambiguous": true
+  },
+  "PPM Tariff Query / Change": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9977,
+    "ambiguous": true
+  },
+  "Senior Citizens & D/P Rates Rebates": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Consumption Complaint / Estimations": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9914,
+    "ambiguous": true
+  },
+  "Sewer: Manhole Cover: Stolen/Missing": {
+    "department": "Distribution Services",
+    "agreement": 0.9918,
+    "ambiguous": true
+  },
+  "Reading Supplied by Customer": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9984,
+    "ambiguous": true
+  },
+  "OSL - Water": {
+    "department": "Customer Relations",
+    "agreement": 0.9946,
+    "ambiguous": true
+  },
+  "Bin Repairs - 240L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Customer : Master Data Updates/Queries": {
+    "department": "Commercial Services",
+    "agreement": 0.9506,
+    "ambiguous": true
+  },
+  "PPM Tripping": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Residential Bin Application - 240L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Financial Adjustment/Transfer of Payment": {
+    "department": "Revenue",
+    "agreement": 0.9991,
+    "ambiguous": true
+  },
+  "Branch Removal (Fallen/Broken)": {
+    "department": "Recreation and Parks",
+    "agreement": 0.9986,
+    "ambiguous": true
+  },
+  "PPM Keypad Faulty": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Stopcock: Defective": {
+    "department": "Distribution Services",
+    "agreement": 0.9461,
+    "ambiguous": true
+  },
+  "Debtors Account Correspondence": {
+    "department": "Revenue",
+    "agreement": 0.9995,
+    "ambiguous": true
+  },
+  "Leak at Valve": {
+    "department": "Distribution Services",
+    "agreement": 0.9933,
+    "ambiguous": true
+  },
+  "Street Lights - ON": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Cable Exposed": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9952,
+    "ambiguous": true
+  },
+  "Leak at Fire Hydrant": {
+    "department": "Distribution Services",
+    "agreement": 0.9842,
+    "ambiguous": true
+  },
+  "Refunds Final Accs/Overpay-North&South": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Tap Defective": {
+    "department": "Distribution Services",
+    "agreement": 0.9955,
+    "ambiguous": true
+  },
+  "Bin Swallowed by Truck": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "E - Services": {
+    "department": "Revenue",
+    "agreement": 0.9994,
+    "ambiguous": true
+  },
+  "Bush Clearing/Weed Control": {
+    "department": "Recreation and Parks",
+    "agreement": 0.9821,
+    "ambiguous": true
+  },
+  "Cockroach Spraying": {
+    "department": "Distribution Services",
+    "agreement": 0.9988,
+    "ambiguous": true
+  },
+  "Toilet Blocked": {
+    "department": "Distribution Services",
+    "agreement": 0.997,
+    "ambiguous": true
+  },
+  "Identify Cables": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9987,
+    "ambiguous": true
+  },
+  "Internal : Billing  / Adjustment Queries": {
+    "department": "Commercial Services",
+    "agreement": 0.9385,
+    "ambiguous": true
+  },
+  "Water Shut-Off Requested": {
+    "department": "Distribution Services",
+    "agreement": 0.9684,
+    "ambiguous": true
+  },
+  "Vector Control": {
+    "department": "City Health",
+    "agreement": 0.9966,
+    "ambiguous": true
+  },
+  "Cistern Defective": {
+    "department": "Distribution Services",
+    "agreement": 0.9979,
+    "ambiguous": true
+  },
+  "Fire Call": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Financial Adjustment": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9986,
+    "ambiguous": true
+  },
+  "Deeds, Final Accounts  - SOUTH": {
+    "department": "Revenue",
+    "agreement": 0.9993,
+    "ambiguous": true
+  },
+  "Paint Markings Lines&Signs": {
+    "department": "Roads Infrastructure Management",
+    "agreement": 0.9942,
+    "ambiguous": true
+  },
+  "Sewer: Pipe Broken": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Meter:  Missing Cover": {
+    "department": "Distribution Services",
+    "agreement": 0.9539,
+    "ambiguous": true
+  },
+  "PPM Customer Unable to Purchase": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9993,
+    "ambiguous": true
+  },
+  "Flooding Road/Property/Informal Set": {
+    "department": "Roads Infrastructure Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Sewer: Foul Smell": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Unblocking of Invoices": {
+    "department": "Revenue",
+    "agreement": 0.9984,
+    "ambiguous": true
+  },
+  "Rates, Rebates and Valuation Reductions": {
+    "department": "Revenue",
+    "agreement": 0.9992,
+    "ambiguous": true
+  },
+  "Low Voltage and/or Shocks": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9992,
+    "ambiguous": true
+  },
+  "Customer : Technical Meter Queries": {
+    "department": "Commercial Services",
+    "agreement": 0.8648,
+    "ambiguous": true
+  },
+  "Internal : Master Data Update Requests": {
+    "department": "Commercial Services",
+    "agreement": 0.9496,
+    "ambiguous": true
+  },
+  "Meter:  Stolen": {
+    "department": "Distribution Services",
+    "agreement": 0.895,
+    "ambiguous": true
+  },
+  "Illegal Dumping - Rec&Park Faci/POS/Park": {
+    "department": "Recreation and Parks",
+    "agreement": 0.9902,
+    "ambiguous": true
+  },
+  "Unhealthy/Unhygienic Conditions": {
+    "department": "City Health",
+    "agreement": 0.9959,
+    "ambiguous": true
+  },
+  "Manhole Blocked": {
+    "department": "Distribution Services",
+    "agreement": 0.9975,
+    "ambiguous": true
+  },
+  "PPM Burning/Burning Smell": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "WMD: Meter Exceeding Indigent Setting": {
+    "department": "Commercial Services",
+    "agreement": 0.9869,
+    "ambiguous": true
+  },
+  "PPM Arrears Query": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.917,
+    "ambiguous": true
+  },
+  "Pole Knocked: Motor Vehicle Accident": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.999,
+    "ambiguous": true
+  },
+  "Customer : Disconnection/Recon Queries": {
+    "department": "Commercial Services",
+    "agreement": 0.9723,
+    "ambiguous": true
+  },
+  "Restrictions: Quota Increase: Domestic": {
+    "department": "Commercial Services",
+    "agreement": 0.9197,
+    "ambiguous": true
+  },
+  "Flickering Lights": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Pipe Burst": {
+    "department": "Distribution Services",
+    "agreement": 0.9969,
+    "ambiguous": true
+  },
+  "Tap Missing": {
+    "department": "Distribution Services",
+    "agreement": 0.999,
+    "ambiguous": true
+  },
+  "Informal Burnt": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Tampering": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Reconnect (After Hours)": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9977,
+    "ambiguous": true
+  },
+  "General maintenance of Parks /Cemeteries": {
+    "department": "Recreation and Parks",
+    "agreement": 0.9929,
+    "ambiguous": true
+  },
+  "Sewerline Blocked": {
+    "department": "Distribution Services",
+    "agreement": 0.9964,
+    "ambiguous": true
+  },
+  "Masonary": {
+    "department": "Home Ownership Transfer, Tenancy Management and Staff Housing",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Electricity Correspondence": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9975,
+    "ambiguous": true
+  },
+  "Meter: Move/Lowering": {
+    "department": "Commercial Services",
+    "agreement": 0.6949,
+    "ambiguous": true
+  },
+  "Indigent Write-off Queries": {
+    "department": "Commercial Services",
+    "agreement": 0.9874,
+    "ambiguous": true
+  },
+  "OSL - Escalation Level 1": {
+    "department": "Customer Relations",
+    "agreement": 0.9937,
+    "ambiguous": true
+  },
+  "PPM Not Registered": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Root Trimming / Pruning": {
+    "department": "Recreation and Parks",
+    "agreement": 0.9987,
+    "ambiguous": true
+  },
+  "Noise Pollution": {
+    "department": "City Health",
+    "agreement": 0.9987,
+    "ambiguous": true
+  },
+  "Cleansing": {
+    "department": "Home Ownership Transfer, Tenancy Management and Staff Housing",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "All Lights Out": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 0.9987,
+    "ambiguous": true
+  },
+  "Fire Hydrant: Missing Cover": {
+    "department": "Distribution Services",
+    "agreement": 0.9972,
+    "ambiguous": true
+  },
+  "Compost Bin Application - 150L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Billing & Invoicing Errors": {
+    "department": "Revenue",
+    "agreement": 0.9876,
+    "ambiguous": true
+  },
+  "Street People": {
+    "department": "Social Development & Early Childhood Development",
+    "agreement": 0.9986,
+    "ambiguous": true
+  },
+  "Gulley Blocked": {
+    "department": "Distribution Services",
+    "agreement": 0.9857,
+    "ambiguous": true
+  },
+  "Sewer: Manhole Cover: Damaged": {
+    "department": "Distribution Services",
+    "agreement": 0.9928,
+    "ambiguous": true
+  },
+  "Metal and Steelwork - (see long text)": {
+    "department": "Home Ownership Transfer, Tenancy Management and Staff Housing",
+    "agreement": 0.997,
+    "ambiguous": true
+  },
+  "Pan Connector Defective": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Deeds, Final Accounts - NORTH": {
+    "department": "Revenue",
+    "agreement": 0.9985,
+    "ambiguous": true
+  },
+  "PPM Installed": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Missing Payments": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Litter Bins Not Serviced": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9952,
+    "ambiguous": true
+  },
+  "OSL - Sewerage": {
+    "department": "Customer Relations",
+    "agreement": 0.9936,
+    "ambiguous": true
+  },
+  "Water Quality: Discoloration": {
+    "department": "Technical Services",
+    "agreement": 0.6938,
+    "ambiguous": true
+  },
+  "Cable Fault": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "WMD: Replacement of Device": {
+    "department": "Commercial Services",
+    "agreement": 0.9042,
+    "ambiguous": true
+  },
+  "Outlet Bend Defective": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Street Lights - High Mast": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Billing Discrepancy": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9982,
+    "ambiguous": true
+  },
+  "Sectional Title Final Accounts": {
+    "department": "Revenue",
+    "agreement": 0.9982,
+    "ambiguous": true
+  },
+  "Additional Bin Application - 240L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Equipment Maintenance": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9963,
+    "ambiguous": true
+  },
+  "Handover / Legal Action": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "SSEG - Suspect Illegal": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "PPM Service Charge Query": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.8962,
+    "ambiguous": true
+  },
+  "Water Meter : Locate": {
+    "department": "Distribution Services",
+    "agreement": 0.574,
+    "ambiguous": true
+  },
+  "Account Enquiries - Contact Centres only": {
+    "department": "Revenue",
+    "agreement": 0.9246,
+    "ambiguous": true
+  },
+  "Parking Enforcement": {
+    "department": "Operational Coordination",
+    "agreement": 0.996,
+    "ambiguous": true
+  },
+  "Debt Management - Correspondence": {
+    "department": "Revenue",
+    "agreement": 0.9862,
+    "ambiguous": true
+  },
+  "Incorrect Valuations": {
+    "department": "Valuations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Reduce No of Bins": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Conjested Traffic at Intersection": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 0.9958,
+    "ambiguous": true
+  },
+  "RequestNewRoadway painted, mounted signs": {
+    "department": "Roads Infrastructure Management",
+    "agreement": 0.9916,
+    "ambiguous": true
+  },
+  "OSL - Electricity": {
+    "department": "Customer Relations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Repair City Parks Infrastructure": {
+    "department": "Recreation and Parks",
+    "agreement": 0.9847,
+    "ambiguous": true
+  },
+  "Litter Bins Required": {
+    "department": "Solid Waste Management",
+    "agreement": 0.995,
+    "ambiguous": true
+  },
+  "Overgrown Erven": {
+    "department": "City Health",
+    "agreement": 0.9848,
+    "ambiguous": true
+  },
+  "Air Pollution": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Move-Out in the Past (Attach Documents)": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Traffic Calming (Speedbumps)": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 0.9944,
+    "ambiguous": true
+  },
+  "Flashing Mode": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Payment Methods": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Speeding": {
+    "department": "Operational Coordination",
+    "agreement": 0.99,
+    "ambiguous": true
+  },
+  "Enquiries: Parks": {
+    "department": "Recreation and Parks",
+    "agreement": 0.9932,
+    "ambiguous": true
+  },
+  "Informal Settlements-Dumping": {
+    "department": "Solid Waste Management",
+    "agreement": 0.8687,
+    "ambiguous": true
+  },
+  "OSL - Non Revenue Related": {
+    "department": "Customer Relations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Bin Cleaning in Parks/POS": {
+    "department": "Recreation and Parks",
+    "agreement": 0.9964,
+    "ambiguous": true
+  },
+  "General Staff Complaints": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Sewer Spillage": {
+    "department": "Distribution Services",
+    "agreement": 0.9927,
+    "ambiguous": true
+  },
+  "Tap Stolen": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Abandoned Vehicles": {
+    "department": "Operational Coordination",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Sewer Pump Station: Overflow": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Stopcock: Locate": {
+    "department": "Distribution Services",
+    "agreement": 0.8548,
+    "ambiguous": true
+  },
+  "OSL - Refuse": {
+    "department": "Customer Relations",
+    "agreement": 0.9961,
+    "ambiguous": true
+  },
+  "Housing Tenant Transfers": {
+    "department": "Revenue",
+    "agreement": 0.9808,
+    "ambiguous": true
+  },
+  "Housing rentals": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Standpipe Leak": {
+    "department": "Distribution Services",
+    "agreement": 0.992,
+    "ambiguous": true
+  },
+  "Non Collection of Recycling": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Repair of play park equipment": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Insolvencies / Indigent": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Sub Divisions and/or Consolidations": {
+    "department": "Valuations",
+    "agreement": 0.9913,
+    "ambiguous": true
+  },
+  "Tree Complaint": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Debt Management": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.864,
+    "ambiguous": true
+  },
+  "Painting": {
+    "department": "Home Ownership Transfer, Tenancy Management and Staff Housing",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Garden Refuse - Ad Hoc": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9953,
+    "ambiguous": true
+  },
+  "Traffic Controller: No Power": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9767,
+    "ambiguous": true
+  },
+  "Water Trough Request": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "General Revenue Related Issues": {
+    "department": "Revenue",
+    "agreement": 0.9856,
+    "ambiguous": true
+  },
+  "Register Meter on SAP": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Use Code Query": {
+    "department": "Valuations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Cold Water (Faulty Ripple Relay)": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Sundry Damage Deposits - SOUTH": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Indigent Support": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Sundry Accounts": {
+    "department": "Revenue",
+    "agreement": 0.9947,
+    "ambiguous": true
+  },
+  "Damaged Recycling Bin - 130L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Water Turn on Supply Requested": {
+    "department": "Distribution Services",
+    "agreement": 0.9204,
+    "ambiguous": true
+  },
+  "Application for Land": {
+    "department": "Property Management",
+    "agreement": 0.9946,
+    "ambiguous": true
+  },
+  "Stopcock: Stolen": {
+    "department": "Distribution Services",
+    "agreement": 0.9059,
+    "ambiguous": true
+  },
+  "Stage Stuck": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "WMD: Repair Cistern": {
+    "department": "Commercial Services",
+    "agreement": 0.8923,
+    "ambiguous": true
+  },
+  "Customer : Tariff Related Queries": {
+    "department": "Commercial Services",
+    "agreement": 0.9247,
+    "ambiguous": true
+  },
+  "Toilet Request": {
+    "department": "Distribution Services",
+    "agreement": 0.9942,
+    "ambiguous": true
+  },
+  "Sewerline Defective": {
+    "department": "Distribution Services",
+    "agreement": 0.9826,
+    "ambiguous": true
+  },
+  "Customer Request - Change of Postal": {
+    "department": "Customer Relations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Restrictions: Investigation": {
+    "department": "Commercial Services",
+    "agreement": 0.8824,
+    "ambiguous": true
+  },
+  "Doubtful / Bad Debt": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Repair Irrigation": {
+    "department": "Recreation and Parks",
+    "agreement": 0.9702,
+    "ambiguous": true
+  },
+  "Standpipe Request": {
+    "department": "Distribution Services",
+    "agreement": 0.9877,
+    "ambiguous": true
+  },
+  "Other": {
+    "department": "Valuations",
+    "agreement": 0.6434,
+    "ambiguous": true
+  },
+  "Valve:  Missing Cover": {
+    "department": "Distribution Services",
+    "agreement": 0.975,
+    "ambiguous": true
+  },
+  "Toilet Unhygienic": {
+    "department": "Distribution Services",
+    "agreement": 0.9935,
+    "ambiguous": true
+  },
+  "Bees in Water Meter/Fire Hydrant": {
+    "department": "Distribution Services",
+    "agreement": 0.9935,
+    "ambiguous": true
+  },
+  "Animal Carcass Removal - Dog - Large": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9934,
+    "ambiguous": true
+  },
+  "Manhole Cover Missing": {
+    "department": "Distribution Services",
+    "agreement": 0.974,
+    "ambiguous": true
+  },
+  "Bin Count": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Credit Meter Tariff Change (Attach Docs)": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Water Standpipes": {
+    "department": "Commercial Services",
+    "agreement": 0.8156,
+    "ambiguous": true
+  },
+  "WMD: Meter Exceeding Quota": {
+    "department": "Commercial Services",
+    "agreement": 0.6157,
+    "ambiguous": true
+  },
+  "Beach Cleaning": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Toilet Door Defective": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Resevoir Overflow": {
+    "department": "Distribution Services",
+    "agreement": 0.9714,
+    "ambiguous": true
+  },
+  "Non-Residential Bin Application - 240L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Refund / Overpayment": {
+    "department": "Revenue",
+    "agreement": 0.9122,
+    "ambiguous": true
+  },
+  "Toilet Door Missing": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "PPM No Sequence Numbers": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Water": {
+    "department": "City Health",
+    "agreement": 0.9767,
+    "ambiguous": true
+  },
+  "Unsuppress of Invoices": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Illegal Dumping Offenders": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9917,
+    "ambiguous": true
+  },
+  "OSL - Billing": {
+    "department": "Customer Relations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Clinic Services": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Contract account merging": {
+    "department": "Revenue",
+    "agreement": 0.9583,
+    "ambiguous": true
+  },
+  "High Voltage": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.9913,
+    "ambiguous": true
+  },
+  "Informal Settlements-No Refuse Collect": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9483,
+    "ambiguous": true
+  },
+  "Animal Carcass Removal - Cat": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9908,
+    "ambiguous": true
+  },
+  "Food": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Corrective Work": {
+    "department": "Property Management",
+    "agreement": 0.973,
+    "ambiguous": true
+  },
+  "Main Leak": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "WMD: Meter: Stolen": {
+    "department": "Commercial Services",
+    "agreement": 0.871,
+    "ambiguous": true
+  },
+  "Contam Spill / Rock mud verge collapsing": {
+    "department": "Roads Infrastructure Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "High Water Pressure": {
+    "department": "Distribution Services",
+    "agreement": 0.7594,
+    "ambiguous": true
+  },
+  "Traffic Signage Required": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 0.7829,
+    "ambiguous": true
+  },
+  "Rating Category Query": {
+    "department": "Valuations",
+    "agreement": 0.9901,
+    "ambiguous": true
+  },
+  "Tree Planting": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Standpipe to be Repositioned": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Request for \"No Dumping\" Signboard": {
+    "department": "Commercial Services",
+    "agreement": 0.9394,
+    "ambiguous": true
+  },
+  "Ownership Details": {
+    "department": "Valuations",
+    "agreement": 0.9892,
+    "ambiguous": true
+  },
+  "OSL - Cash Management": {
+    "department": "Customer Relations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Escalated Query - Level 2": {
+    "department": "Customer Relations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "OSL - Masta Data": {
+    "department": "Customer Relations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Damaged Recycling Bin - 240L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Repairs and Maintenance": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Recycling Bin Stolen - 240L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Interdepartmental Accounts": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Water Restrictions: Complaints": {
+    "department": "Technical Services",
+    "agreement": 0.4127,
+    "ambiguous": true
+  },
+  "OSL - Escalation Level 2": {
+    "department": "Customer Relations",
+    "agreement": 0.9873,
+    "ambiguous": true
+  },
+  "Water Quality: Taste": {
+    "department": "Technical Services",
+    "agreement": 0.7157,
+    "ambiguous": true
+  },
+  "Restrictions: Enquiries": {
+    "department": "Commercial Services",
+    "agreement": 0.869,
+    "ambiguous": true
+  },
+  "Water Quality: Smell": {
+    "department": "Technical Services",
+    "agreement": 0.7901,
+    "ambiguous": true
+  },
+  "OSL - Customer Care": {
+    "department": "Customer Relations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Customer : New Connections": {
+    "department": "Commercial Services",
+    "agreement": 0.6778,
+    "ambiguous": true
+  },
+  "Termination of Service": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Acquisition of Land": {
+    "department": "Property Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Amend Service Frequency": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9649,
+    "ambiguous": true
+  },
+  "Reconciliation/Breakdown of Account": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Rodding Eye Missing": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Cleaning of  Vacant Land": {
+    "department": "Property Management",
+    "agreement": 0.9091,
+    "ambiguous": true
+  },
+  "Recycling Bin Stolen - 130L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Bin Hire - Events": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Leasing of Land": {
+    "department": "Property Management",
+    "agreement": 0.8704,
+    "ambiguous": true
+  },
+  "Water Pollution Complaint / Incident": {
+    "department": "Technical Services",
+    "agreement": 0.6615,
+    "ambiguous": true
+  },
+  "Housing Water Mngmnt:Device Installation": {
+    "department": "Commercial Services",
+    "agreement": 0.6615,
+    "ambiguous": true
+  },
+  "Toilet Top Structure Damaged": {
+    "department": "Distribution Services",
+    "agreement": 0.9556,
+    "ambiguous": true
+  },
+  "Gulley Request": {
+    "department": "Distribution Services",
+    "agreement": 0.9767,
+    "ambiguous": true
+  },
+  "Remove Meter": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Animal Carcass Removal - Dog - Small": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Registration-Valuation Query": {
+    "department": "Valuations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Animal Keeping": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Meter Bypassed": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Water Trough Defective": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Animal Carcass Removal - Seal - Large": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "OSL - Debt Management": {
+    "department": "Customer Relations",
+    "agreement": 0.9268,
+    "ambiguous": true
+  },
+  "Reconnect (New Tenant)": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Informal Settlements-Ship cont. overflow": {
+    "department": "Solid Waste Management",
+    "agreement": 0.7708,
+    "ambiguous": true
+  },
+  "Internal : Escalated Correspondence": {
+    "department": "Commercial Services",
+    "agreement": 0.9211,
+    "ambiguous": true
+  },
+  "Toilet Pan Missing": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Tenders for Land": {
+    "department": "Property Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Meter: By - Law Contravention": {
+    "department": "Commercial Services",
+    "agreement": 0.6226,
+    "ambiguous": true
+  },
+  "Short Timing": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Sewer Blockage Campaign": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Indigent Rates Relief - Income based": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Informal Settlements-Fire Debris Removal": {
+    "department": "Solid Waste Management",
+    "agreement": 0.7317,
+    "ambiguous": true
+  },
+  "Storm Water Pollution": {
+    "department": "Solid Waste Management",
+    "agreement": 0.5,
+    "ambiguous": true
+  },
+  "Customer Request - Application Form": {
+    "department": "Customer Relations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Indigent - Rates Relief": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Meter Leak": {
+    "department": "Distribution Services",
+    "agreement": 0.8485,
+    "ambiguous": true
+  },
+  "Waste Service Provider Accreditation": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Repairs to Recycling Bin - 130L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Meter Removed": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Escalated Query - Level 3": {
+    "department": "Customer Relations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Animal Carcass Removal - Seal - Small": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Unable to Locate Meter": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Enforcement and Traffic Violations": {
+    "department": "Operational Coordination",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "User Maintenance WareHouse": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Meter Stuck": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Disconnect (Non-Payment)": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Informal Settlements-No Bags Received": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Spraying - Cockroach or Weed": {
+    "department": "Roads Infrastructure Management",
+    "agreement": 0.9545,
+    "ambiguous": true
+  },
+  "Composting Feedback": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Vendor Other (Detail in Sort Field)": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Building / Erf Sizes": {
+    "department": "Valuations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "WMD: Replace Tap Washer": {
+    "department": "Commercial Services",
+    "agreement": 0.76,
+    "ambiguous": true
+  },
+  "Vulnerable Groups": {
+    "department": "Social Development & Early Childhood Development",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Meter Reversing": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Change Control": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 0.8182,
+    "ambiguous": true
+  },
+  "Disconnect (Move-Out)": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Water wastage at Rec&Parks facilities": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "System Queries": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Christmas Box Complaints": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Reckless Driving": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Fleet Complaints": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Sundry Damage Deposits - NORTH": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "ECD": {
+    "department": "Social Development & Early Childhood Development",
+    "agreement": 0.9333,
+    "ambiguous": true
+  },
+  "Smoking": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Substance Abuse": {
+    "department": "Social Development & Early Childhood Development",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Enquiries: Cemetries": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Repairs to Recycling Bin -240L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Animal Carcass Removal - Cow": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Instalment Plan": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Leak at Standpipe": {
+    "department": "Distribution Services",
+    "agreement": 0.9286,
+    "ambiguous": true
+  },
+  "Returned Cheques": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Porta Pottie Toilet Defective": {
+    "department": "Distribution Services",
+    "agreement": 0.9231,
+    "ambiguous": true
+  },
+  "Traffic Control": {
+    "department": "Operational Coordination",
+    "agreement": 0.5714,
+    "ambiguous": true
+  },
+  "Toilet Top Structure Missing": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Agricultural Rebate": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Vendor Query": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Change of Situation Address": {
+    "department": "Revenue",
+    "agreement": 0.6111,
+    "ambiguous": true
+  },
+  "Meter Defective": {
+    "department": "Distribution Services",
+    "agreement": 0.6875,
+    "ambiguous": true
+  },
+  "Way Leave Application": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "PPM Minus Mode": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Special Waste": {
+    "department": "Solid Waste Management",
+    "agreement": 0.9091,
+    "ambiguous": true
+  },
+  "Refunds Requests via Fax-e WEB": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Removal of Graffiti at Rec&Parks facilit": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Spill": {
+    "department": "Technical Services",
+    "agreement": 0.75,
+    "ambiguous": true
+  },
+  "Compost Bin Application - 250L": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Animal Carcass Removal - Horse / Donkey": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Illegal dumping at facilities": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Standpipe to be Removed": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Wastewater Related Incidents": {
+    "department": "Distribution Services",
+    "agreement": 0.4211,
+    "ambiguous": true
+  },
+  "Demolitions": {
+    "department": "Valuations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Bribery and Corruption": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Washing Trough Request": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Selling of Land": {
+    "department": "Property Management",
+    "agreement": 0.875,
+    "ambiguous": true
+  },
+  "Consolidation of Property": {
+    "department": "Solid Waste Management",
+    "agreement": 0.875,
+    "ambiguous": true
+  },
+  "Signals out of Sync at Intersection": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Illegal ranking/ operators": {
+    "department": "Operational Coordination",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Non - Profitable Organization (NPO)": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "OSL - Sundries": {
+    "department": "Customer Relations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Usage of facilities": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "User Maintenance OVS": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Entertainment Noise": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Shower Defective": {
+    "department": "Distribution Services",
+    "agreement": 0.75,
+    "ambiguous": true
+  },
+  "Sewer Pump Defective": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Animal Carcass Removal - Sheep": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Accident Damaged": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Public Benefit Organisation (PBO)": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Poverty Alleviation": {
+    "department": "Social Development & Early Childhood Development",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Projects": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Cleaning of ablution facilities": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Poor Services at Swimming Pools": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "MDUS Event PTM Construction": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "MDUS Event PTM AMI": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Lamps Faulty": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Toilet Container Missing": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Vehicle Lost Load": {
+    "department": "Operational Coordination",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Pedestrian Buttons": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Fire Hydrant Request": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Storm Water Ingress": {
+    "department": "Solid Waste Management",
+    "agreement": 0.7143,
+    "ambiguous": true
+  },
+  "Pressure Management: Enquiry": {
+    "department": "Commercial Services",
+    "agreement": 0.8,
+    "ambiguous": true
+  },
+  "Waster Separation / Recycling": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "MDUS Event LPU Billing": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Closure of Roads": {
+    "department": "Property Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Vendor Investigation": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Damaged Compost 150L Bin": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Exemption Application": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Facility locked to Public/Lessee": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "DO NOT USE LU - Illegal Workshops": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Faulty Hydrants": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Fire Hydrant Defective": {
+    "department": "Distribution Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "AWS: Enquiry": {
+    "department": "Technical Services",
+    "agreement": 0.4,
+    "ambiguous": true
+  },
+  "MDUS Event SPU Billing": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Rates Clearance Group ID Change": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Account Queries": {
+    "department": "Technical Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Sewerage Volumetric Assessment": {
+    "department": "Commercial Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Stolen compost 250L Bin": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Removal of bees at Facilities": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Stuck on Red": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Industrial Effluent Inspection": {
+    "department": "Technical Services",
+    "agreement": 0.5,
+    "ambiguous": true
+  },
+  "DO NOT USE LU - illegal Land Use": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Taxis Off route": {
+    "department": "Operational Coordination",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Damaged Compost 250L Bin": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Flora": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Controller Vandalised": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Vendor Software (Detail in Sort Field)": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Poor Services at the Civic Centres/Halls": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Vendor Maintenance (Detail in SortField)": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "DO NOT USE Customer Interface Queries": {
+    "department": "Property Management",
+    "agreement": 0.6667,
+    "ambiguous": true
+  },
+  "Request Arrows to Run Earlier / Later": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Trees": {
+    "department": "City Health",
+    "agreement": 0.5,
+    "ambiguous": true
+  },
+  "DO NOT USE Build Dev - Illegal Building": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Lack of Facilities": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Staff Related Matters": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Swimming Pools Closure Times": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Sundry Accounts - NORTH": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Dumping": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Green Electricity": {
+    "department": "Electricity Generation and Distribution",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Assistance": {
+    "department": "Commercial Services",
+    "agreement": 0.3333,
+    "ambiguous": true
+  },
+  "OSL - Final Demands": {
+    "department": "Customer Relations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "AWS: Planned Installation": {
+    "department": "Distribution Services",
+    "agreement": 0.6667,
+    "ambiguous": true
+  },
+  "General MVR Related Enquiries": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Revaluation Register": {
+    "department": "Valuations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Signage erected on beaches-dog signs etc": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Fauna": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Sport Facilities Requirements": {
+    "department": "Recreation and Parks",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Drop-Off : Operating Times": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Drop-Off : Entry Refusal": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Environmental Impact Assesment": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Request for S79": {
+    "department": "Valuations",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Request for Pedestrian Lights": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Scholar Transport (overloading no permit": {
+    "department": "Operational Coordination",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Sampling": {
+    "department": "Technical Services",
+    "agreement": 0.5,
+    "ambiguous": true
+  },
+  "Inconsiderate negligent reckless driving": {
+    "department": "Operational Coordination",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Subdivision of Property": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "DO NOT USE Propert Zoning Request": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "DO NOT USE LU - Overcrowding": {
+    "department": "City Health",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "DO NOT USE Build Dev - illegal Boundary": {
+    "department": "Home Ownership Transfer, Tenancy Management and Staff Housing",
+    "agreement": 0.5,
+    "ambiguous": true
+  },
+  "Invoice Receipt Confirmation": {
+    "department": "Commercial Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Pre-Paid Vendor Reconciliation": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Legal": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Conflicting Stages of Traffic Signals": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Pedestrian Crossing": {
+    "department": "Transport Planning & Network Management",
+    "agreement": 0.5,
+    "ambiguous": true
+  },
+  "REnewal of Drivers License": {
+    "department": "Revenue",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Property Management - Lease": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Pressure Management: Regulate & Enforce": {
+    "department": "Commercial Services",
+    "agreement": 1.0,
+    "ambiguous": false
+  },
+  "Waste Service Provider Query": {
+    "department": "Solid Waste Management",
+    "agreement": 1.0,
+    "ambiguous": false
+  }
+}
