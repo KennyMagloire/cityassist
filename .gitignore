@@ -10,3 +10,7 @@ CLAUDE.md
 .idea/
 src/
 data/vectors/partial.npy
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
