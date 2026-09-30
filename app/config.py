@@ -16,6 +16,8 @@ MODEL_FILE = ROOT / "models" / "band_classifier.joblib"
 LOOKUP_FILE = ROOT / "models" / "department_lookup.json"
 PROMPT_FILE = ROOT / "prompts" / "system_prompt.txt"
 NOTICE_FILE = ROOT / "prompts" / "recording_notice.txt"
+TYPE_VECTORS_FILE = ROOT / "models" / "type_vectors.npy"
+TYPE_NAMES_FILE = ROOT / "models" / "type_names.json"
 DB_FILE = ROOT / "data" / "conversations.db"
 
 # Section 3: the models and limits
