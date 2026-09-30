@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT / ".env")
 
 # Section 2: where the files are
+GROUPS_FILE = ROOT / "models" / "code_groups.json"
 VECTORS_FILE = ROOT / "data" / "vectors" / "vectors.npy"
 META_FILE = ROOT / "data" / "vectors" / "meta.json"
 MODEL_FILE = ROOT / "models" / "band_classifier.joblib"
