@@ -16,14 +16,17 @@ UNDERSTAND_PROMPT = """You read messages sent to a City of Cape Town assistant.
 Decide whether the resident is REPORTING a problem (something broken, missing, leaking, dirty or dangerous that needs fixing) or ASKING a question.
 If it is a report, choose the request type from the numbered list, or 0 if none fits.
 Use the whole conversation: the location may have been given in an earlier message.
+Only the LATEST message decides the intent: if it just says thanks, agrees, or asks something else, the intent is "question".
 Reply with JSON only, no other text:
 {"intent": "report" or "question", "type_number": number, "suburb": "suburb name or empty", "street": "street or landmark or empty"}"""
+
 
 def candidate_types(vector):
     """The request types whose names are closest in meaning to the message."""
     scores = _type_vectors @ vector
     best = np.argsort(scores)[::-1][:CANDIDATES]
     return [_type_names[i] for i in best]
+
 
 def understand(message, history, vector):
     """Return intent, a valid request type (or None), suburb and street as typed."""

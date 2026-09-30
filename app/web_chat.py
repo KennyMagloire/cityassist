@@ -33,7 +33,7 @@ def respond(message, history, conversation_id):
     earlier = [{"role": m["role"], "content": as_text(m["content"])}
                for m in history[-HISTORY_TURNS:]]
     try:
-        reply = answer(message, earlier)
+        reply = answer(message, earlier, conversation_id, "web")
     except Exception:
         reply = FALLBACK
 
