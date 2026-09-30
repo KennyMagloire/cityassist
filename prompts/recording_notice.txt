@@ -1,0 +1,3 @@
+Hi, I'm CityAssist, an automated assistant (a student prototype, not an official City of Cape Town service).
+This conversation is recorded so I can help you and to improve the service.
+Please don't share ID or bank numbers. To log a request officially, call 0860 103 089.
