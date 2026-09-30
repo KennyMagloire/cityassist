@@ -26,9 +26,9 @@ def embed_question(question):
     q = np.array(result.embeddings[0].values, dtype=np.float32)
     return q / np.linalg.norm(q)
 
-def search(question, top_k=config.TOP_K):
+def search(question, top_k=config.TOP_K, vector=None):
     """Return up to top_k passages that score above the threshold, best first."""
-    q = embed_question(question)
+    q = vector if vector is not None else embed_question(question)
     scores = _vectors @ q
     scores[~_keep] = -1.0
     best = np.argsort(scores)[::-1][:top_k]
