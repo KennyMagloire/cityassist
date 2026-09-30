@@ -5,6 +5,7 @@ import re
 from app import config
 from app.llm import write_reply
 from app.search import search
+from app.redact import redact
 
 log = logging.getLogger(__name__)
 
@@ -44,7 +45,8 @@ def sounds_urgent(message):
 
 def answer(message, history):
     """Return the reply to one message. history = earlier turns as role/content dicts."""
-    message = message.strip()
+    message = redact(message.strip())
+    history = [{"role": m["role"], "content": redact(m["content"])} for m in history]
     if len(message) > config.MAX_MESSAGE_CHARS:
         return f"Please keep your message under {config.MAX_MESSAGE_CHARS} characters."
 
