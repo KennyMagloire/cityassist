@@ -1,0 +1,24 @@
+"""CityAssist backend: one FastAPI application serving the web chat (and later WhatsApp)."""
+import gradio as gr
+from fastapi import FastAPI
+
+from app.web_chat import CSS, THEME, build_page
+
+app = FastAPI(title="CityAssist")
+
+
+@app.get("/health")
+def health():
+    """Lets us, and the hosting service, check the app is running."""
+    return {"status": "ok"}
+
+
+app = gr.mount_gradio_app(app, build_page(), path="/chat", theme=THEME, css=CSS)
+
+
+
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=True)
