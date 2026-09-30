@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
+
 # Section 1: find the project folder and load the .env file
 ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT / ".env")

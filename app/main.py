@@ -2,6 +2,7 @@
 import gradio as gr
 from fastapi import FastAPI
 
+from app.database import init_db
 from app.web_chat import CSS, THEME, build_page
 
 app = FastAPI(title="CityAssist")
@@ -13,11 +14,8 @@ def health():
     return {"status": "ok"}
 
 
+init_db()
 app = gr.mount_gradio_app(app, build_page(), path="/chat", theme=THEME, css=CSS)
-
-
-
-
 
 if __name__ == "__main__":
     import uvicorn

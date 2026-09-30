@@ -1,6 +1,10 @@
 """Web chat page. Based on Keo's Gradio page from the first prototype,
 connected to the shared assistant."""
 import gradio as gr
+import uuid
+
+from app.database import save_message
+from app.redact import redact
 
 from app.assistant import FALLBACK, answer, opening_message
 
@@ -22,7 +26,7 @@ def as_text(content):
     return str(content)
 
 
-def respond(message, history):
+def respond(message, history, conversation_id):
     if not message or not message.strip():
         return history, ""
 
@@ -33,6 +37,9 @@ def respond(message, history):
     except Exception:
         reply = FALLBACK
 
+    save_message(conversation_id, "web", "user", redact(message))
+    save_message(conversation_id, "web", "assistant", reply)
+
     history = history + [
         {"role": "user", "content": message},
         {"role": "assistant", "content": reply},
@@ -41,8 +48,8 @@ def respond(message, history):
 
 
 def start():
-    """A new conversation always opens with the recording notice."""
-    return [{"role": "assistant", "content": opening_message()}]
+    """A new conversation: a fresh ID, and the recording notice first."""
+    return [{"role": "assistant", "content": opening_message()}], str(uuid.uuid4())
 
 
 def build_page():
@@ -52,7 +59,8 @@ def build_page():
             "Ask about water, electricity, refuse and roads in Cape Town, "
             "or describe a problem you want to report."
         )
-        chatbot = gr.Chatbot(value=start(), height=480, show_label=False)
+        chatbot = gr.Chatbot(height=480, show_label=False)
+        conversation_id = gr.State()
 
         with gr.Row():
             msg = gr.Textbox(placeholder="Type your message here...",
@@ -77,7 +85,8 @@ def build_page():
             elem_id="footer",
         )
 
-        send.click(respond, [msg, chatbot], [chatbot, msg])
-        msg.submit(respond, [msg, chatbot], [chatbot, msg])
-        clear.click(start, None, chatbot, queue=False)
+        send.click(respond, [msg, chatbot, conversation_id], [chatbot, msg])
+        msg.submit(respond, [msg, chatbot, conversation_id], [chatbot, msg])
+        clear.click(start, None, [chatbot, conversation_id], queue=False)
+        page.load(start, None, [chatbot, conversation_id])
     return page
