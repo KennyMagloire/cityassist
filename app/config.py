@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+from datetime import timedelta, timezone
 
 
 # Section 1: find the project folder and load the .env file
@@ -22,7 +23,7 @@ EMBED_MODEL = "gemini-embedding-001"
 EMBED_DIMENSIONS = 768
 GROQ_MODEL = "openai/gpt-oss-20b"
 GEMINI_CHAT_MODEL = "gemini-2.5-flash"
-
+CAPE_TOWN_TIME = timezone(timedelta(hours=2))
 TOP_K = 5
 MIN_SCORE = 0.60
 MAX_MESSAGE_CHARS = 1000
