@@ -39,3 +39,11 @@ if not GEMINI_API_KEY:
     raise SystemExit("GEMINI_API_KEY is missing from .env")
 if not GROQ_API_KEY:
     raise SystemExit("GROQ_API_KEY is missing from .env")
+
+WHATSAPP_TOKEN = os.getenv("WHATSAPP_TOKEN")
+WHATSAPP_PHONE_ID = os.getenv("WHATSAPP_PHONE_ID")
+WHATSAPP_APP_SECRET = os.getenv("WHATSAPP_APP_SECRET")
+WHATSAPP_VERIFY_TOKEN = os.getenv("WHATSAPP_VERIFY_TOKEN")
+WHATSAPP_ENABLED = all([WHATSAPP_TOKEN, WHATSAPP_PHONE_ID,
+                        WHATSAPP_APP_SECRET, WHATSAPP_VERIFY_TOKEN])
+GRAPH_API_URL = "https://graph.facebook.com/v23.0"

@@ -65,3 +65,13 @@ def save_draft(conversation_id, channel, request_type, department, suburb, stree
                 (conversation_id, channel, request_type, department, suburb, street, band, now),
             )
             return cursor.lastrowid
+
+def get_history(conversation_id, limit=6):
+    """The last few messages of a conversation, oldest first, as role/content dicts."""
+    with closing(_connect()) as conn:
+        rows = conn.execute(
+            "SELECT role, content FROM messages WHERE conversation_id = ? "
+            "ORDER BY id DESC LIMIT ?",
+            (conversation_id, limit),
+        ).fetchall()
+    return [{"role": role, "content": content} for role, content in reversed(rows)]
