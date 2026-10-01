@@ -64,3 +64,52 @@ def conversation_id_for(number):
 def for_whatsapp(text):
     """WhatsApp uses *single* asterisks for bold and limits message length."""
     return
+
+
+
+def send_text(to, text):
+    response = httpx.post(
+        f"{config.GRAPH_API_URL}/{config.WHATSAPP_PHONE_ID}/messages",
+        headers={"Authorization": f"Bearer {config.WHATSAPP_TOKEN}"},
+        json={"messaging_product": "whatsapp", "to": to,
+              "type": "text", "text": {"body": text}},
+        timeout=15,
+    )
+    if response.status_code >= 400:
+        log.warning("WhatsApp send failed with status %s", response.status_code)
+
+
+# ---------- the main job ----------
+
+def handle_message(msg):
+    """Answer one incoming WhatsApp message. Runs in the background."""
+    message_id = msg.get("id")
+    if message_id in _seen_ids:
+        return
+    _seen_ids.append(message_id)
+
+    sender = msg.get("from")
+    if not sender:
+        return
+    if not within_limit(sender):
+        send_text(sender, TOO_MANY)
+        return
+    if msg.get("type") != "text":
+        send_text(sender, NOT_TEXT)
+        return
+
+    text = msg["text"]["body"]
+    conversation_id = conversation_id_for(sender)
+    history = get_history(conversation_id)
+    if not history:
+        send_text(sender, opening_message())
+        save_message(conversation_id, "whatsapp", "assistant", opening_message())
+
+    try:
+        reply = answer(text, history, conversation_id, "whatsapp")
+    except Exception:
+        reply = FALLBACK
+
+    save_message(conversation_id, "whatsapp", "user", redact(text))
+    save_message(conversation_id, "whatsapp", "assistant", reply)
+    send_text(sender, for_whatsapp(reply))
