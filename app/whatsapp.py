@@ -76,7 +76,7 @@ def send_text(to, text):
         timeout=15,
     )
     if response.status_code >= 400:
-        log.warning("WhatsApp send failed with status %s", response.status_code)
+        log.warning("WhatsApp send failed: %s %s", response.status_code, response.text[:300])
 
 
 # ---------- the main job ----------
