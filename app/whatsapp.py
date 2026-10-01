@@ -68,6 +68,10 @@ def for_whatsapp(text):
 
 
 def send_text(to, text):
+    if not isinstance(text, str) or not text.strip():
+        log.warning("Reply was empty or not text (%s); sending the fallback instead",
+                    type(text).__name__)
+        text = FALLBACK
     response = httpx.post(
         f"{config.GRAPH_API_URL}/{config.WHATSAPP_PHONE_ID}/messages",
         headers={"Authorization": f"Bearer {config.WHATSAPP_TOKEN}"},
