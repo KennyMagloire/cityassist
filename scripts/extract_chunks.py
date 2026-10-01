@@ -13,6 +13,7 @@ import pdfplumber
 
 # --------------------------------------------------------------- settings
 PDF_DIR = Path("docs/pdfs")
+GUIDE_DIR = Path("docs/guides")
 OUT_FILE = Path("data/processed/chunks.json")
 
 TARGET_CHARS = 900      # roughly how big each piece should be
@@ -84,6 +85,23 @@ def split_into_chunks(text):
     return [c.strip() for c in chunks if len(c.strip()) >= MIN_CHARS]
 
 # --------------------------------------------------------------- main
+def guide_chunks():
+    """Cut the group's reporting guides (.txt) into pieces, in the same shape as the PDF pieces."""
+    chunks = []
+    for path in sorted(GUIDE_DIR.glob("*.txt")):
+        text = path.read_text(encoding="utf-8")
+        for n, piece in enumerate(split_into_chunks(text)):
+            chunks.append({
+                "chunk_id": f"{path.stem}__p1__{n:03d}",
+                "document": path.stem,
+                "source_file": path.name,
+                "page": 1,
+                "text": piece,
+                "chars": len(piece),
+            })
+    print(f"  {len(chunks)} chunks from {len(list(GUIDE_DIR.glob('*.txt')))} guide(s)")
+    return chunks
+
 def main():
     if not PDF_DIR.exists():
         raise SystemExit(f"No folder at {PDF_DIR}. Create it and add the PDFs.")
@@ -143,6 +161,8 @@ def main():
         print(f"  {pdf_path.name}")
         print(f"      {doc_pages} pages  ->  {doc_chunks} chunks{flag}")
 
+    all_chunks.extend(guide_chunks())
+
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(all_chunks, f, ensure_ascii=False, indent=2)
 
@@ -162,6 +182,8 @@ def main():
         if len(empty_pages) > 10:
             print(f"   ...and {len(empty_pages) - 10} more")
         print("These are probably scanned images rather than proper PDFs.")
+
+
 
 
 if __name__ == "__main__":
