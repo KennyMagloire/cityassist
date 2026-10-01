@@ -1,7 +1,8 @@
 """Handle one resident message: rules, understanding, search or report, and checks."""
 import logging
 import re
-
+import csv
+from pathlib import Path
 from app import config
 from app.classifier import department_for, predict_band
 from app.database import save_draft
@@ -15,6 +16,13 @@ log = logging.getLogger(__name__)
 
 SYSTEM_PROMPT = config.PROMPT_FILE.read_text(encoding="utf-8")
 RECORDING_NOTICE = config.NOTICE_FILE.read_text(encoding="utf-8").strip()
+def _load_titles():
+    """Map each document's file name (without .pdf) to its proper title from sources.csv."""
+    with open(config.SOURCES_FILE, encoding="utf-8-sig", newline="") as f:
+        return {Path(row["filename"]).stem: row["title"] for row in csv.DictReader(f)}
+
+
+TITLES = _load_titles()
 
 FALLBACK = ("Sorry, I can't answer right now. Please call the City on 0860 103 089 "
             "or log a request at www.capetown.gov.za/servicerequests.")
@@ -63,12 +71,17 @@ def add_emergency_line(message, reply):
 
 
 def add_sources(reply, passages):
-    """Under the reply, list the document and page behind each [n] it cites."""
+    """Under the reply, list each cited document and page once, with its proper title."""
     cited = sorted({int(n) for n in re.findall(r"\[(\d+)\]", reply)})
     if not cited:
-        return reply
-    lines = [f"[{n}] {passages[n - 1]['document']}, page {passages[n - 1]['page']}"
-             for n in cited]
+        titles = sorted({TITLES.get(p["document"], p["document"]) for p in passages})
+        return reply + "\n\nBased on:\n" + "\n".join(titles)
+    places = {}
+    for n in cited:
+        p = passages[n - 1]
+        places.setdefault((p["document"], p["page"]), []).append(f"[{n}]")
+    lines = [f"{' '.join(numbers)} {TITLES.get(doc, doc)}, page {page}"
+             for (doc, page), numbers in places.items()]
     return reply + "\n\nSources:\n" + "\n".join(lines)
 
 
@@ -143,13 +156,13 @@ def answer(message, history, conversation_id="local", channel="web"):
 
     try:
         vector = embed_question(message)
+        context_vector = vector_for_report(message, history, vector)
     except Exception as error:
         log.warning("Embedding failed (%s)", type(error).__name__)
         return FALLBACK
 
     try:
-        report_vector = vector_for_report(message, history, vector)
-        info = understand(message, history, report_vector)
+        info = understand(message, history, context_vector)
     except Exception as error:
         log.warning("Understanding failed (%s); treating as a question", type(error).__name__)
         info = {"intent": "question"}
@@ -157,5 +170,7 @@ def answer(message, history, conversation_id="local", channel="web"):
     if info.get("intent") == "report":
         reply = handle_report(info, conversation_id, channel)
     else:
-        reply = answer_question(message, history, vector)
+        is_follow_up = len(message.split()) <= 4
+        search_vector = context_vector if is_follow_up else vector
+        reply = answer_question(message, history, search_vector)
     return add_emergency_line(message, reply)

@@ -59,7 +59,7 @@ def build_page():
             "Ask about water, electricity, refuse and roads in Cape Town, "
             "or describe a problem you want to report."
         )
-        chatbot = gr.Chatbot(height=480, show_label=False)
+        chatbot = gr.Chatbot(height="65vh", show_label=False)
         conversation_id = gr.State()
 
         with gr.Row():

@@ -19,6 +19,7 @@ NOTICE_FILE = ROOT / "prompts" / "recording_notice.txt"
 TYPE_VECTORS_FILE = ROOT / "models" / "type_vectors.npy"
 TYPE_NAMES_FILE = ROOT / "models" / "type_names.json"
 DB_FILE = ROOT / "data" / "conversations.db"
+SOURCES_FILE = ROOT / "docs" / "sources.csv"
 
 # Section 3: the models and limits
 EMBED_MODEL = "gemini-embedding-001"
