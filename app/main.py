@@ -1,5 +1,6 @@
 """CityAssist backend: one FastAPI application serving the web chat (and later WhatsApp)."""
 import gradio as gr
+from fastapi.responses import RedirectResponse
 from fastapi import FastAPI
 
 from app.database import init_db
@@ -10,6 +11,10 @@ app = FastAPI(title="CityAssist")
 
 @app.get("/health")
 def health():
+    @app.get("/")
+    def home():
+        """Send anyone who opens the bare address straight to the chat page."""
+        return RedirectResponse("/chat")
     """Lets us, and the hosting service, check the app is running."""
     return {"status": "ok"}
 
