@@ -147,7 +147,7 @@ def format_draft(draft_id, info, suburb, department, band):
 
 # ---------- the main entry point ----------
 
-def answer(message, history, conversation_id="local", channel="web"):
+def  answer_with_details(message, history, conversation_id="local", channel="web"):
     """Return the reply to one message. history = earlier turns as role/content dicts."""
     message = redact(message.strip())
     history = [{"role": m["role"], "content": redact(m["content"])} for m in history]
@@ -173,4 +173,11 @@ def answer(message, history, conversation_id="local", channel="web"):
         is_follow_up = len(message.split()) <= 4
         search_vector = context_vector if is_follow_up else vector
         reply = answer_question(message, history, search_vector)
-    return add_emergency_line(message, reply)
+    return {"reply": add_emergency_line(message, reply), "intent": info.get("intent", "question"),
+            "request_type": info.get("request_type"), "suburb": info.get("suburb", "")}
+
+
+def answer(message, history, conversation_id="local", channel="web"):
+    """The reply only, for the web page and WhatsApp."""
+    result = answer_with_details(message, history, conversation_id, channel)
+    return result if isinstance(result, str) else result["reply"]
