@@ -1,5 +1,6 @@
 """Handle one resident message: rules, understanding, search or report, and checks."""
 import csv
+import difflib
 import logging
 import re
 from pathlib import Path
@@ -37,7 +38,8 @@ EMERGENCY_WORDS = ("fire", "flood", "live wire", "sparking", "electrocut", "sewa
 
 ASK_PROBLEM = ("I'd like to help you report this. Could you describe the problem in a bit "
                "more detail, for example what is broken, leaking or missing?")
-ASK_LOCATION = "Thanks. Where is the problem? Please give the street and the suburb."
+ASK_LOCATION = ("Thanks. Where is the problem? Please give the street and the suburb, "
+                "and the house number or a nearby landmark if you have one.")
 
 GREETINGS = {"hi", "hello", "hey", "hi there", "hello there",
              "good morning", "good afternoon", "good evening"}
@@ -111,6 +113,14 @@ def vector_for_report(message, history, vector):
     if not earlier:
         return vector
     return embed_question(" ".join(earlier + [message]))
+
+
+def resident_wrote(suburb, said):
+    """True if the resident wrote this suburb, allowing small typos ("Claremon").
+    Stops the model from inventing a suburb the resident never mentioned."""
+    words_said = re.findall(r"[a-z]+", said)
+    return all(difflib.get_close_matches(word, words_said, n=1, cutoff=0.85)
+               for word in re.findall(r"[a-z]+", suburb.lower()))
 
 
 # ---------- the two paths ----------
@@ -192,8 +202,9 @@ def answer_with_details(message, history, conversation_id="local", channel="web"
         log.warning("Understanding failed (%s); treating as a question", type(error).__name__)
         info = {"intent": "question"}
 
+    log.warning("Understood: %s", info)
     said = " ".join([m["content"] for m in history if m["role"] == "user"] + [message]).lower()
-    if info.get("suburb") and info["suburb"].lower() not in said:
+    if info.get("suburb") and not resident_wrote(info["suburb"], said):
         info["suburb"] = ""
 
     if info.get("intent") == "report":
