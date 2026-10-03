@@ -1,0 +1,574 @@
+utterance_id,utterance,expected_intent,got_intent,expected_code,got_code,expected_behaviour,got_behaviour,matched_suburb,seconds,reply,correct_manual
+U001,There's sewage coming up in my backyard and the smell is unbearable,report,report,Sewer: Blocked/Overflow,Sewer: Blocked/Overflow,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U002,The manhole outside 14 Balfour Road in Gugulethu has been overflowing since Tuesday,report,report,Sewer: Blocked/Overflow,Sewer: Blocked/Overflow,draft,draft,GUGULETU,1.2,"I've prepared draft request number 3.
+
+Problem: Sewer: Blocked/Overflow
+Where: 14 Balfour Road, Guguletu
+Handled by: Distribution Services
+Usually resolved in: Same day (under 1 day) (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U003,my drain is blocked,report,report,Sewer: Blocked/Overflow,Block Pipe/Chan/Canal/Drain/Gully/Manh,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U004,We have had no electricity since about 9 last night. The neighbours across the road still have power so I don't think it's load shedding,report,report,No Power,No Power,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U005,power is off in Manenberg again,report,report,No Power,No Power,draft,draft,MANENBERG,1.8,"I've prepared draft request number 4.
+
+Problem: No Power
+Where: Manenberg
+Handled by: Electricity Generation and Distribution
+Usually resolved in: Same day (under 1 day) (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U006,Eskom load shedding schedule for my area please,question,question,,,not_covered,answer_with_sources,,1.6,"I’m sorry, but I don’t have that information.  
+For the latest Eskom load‑shedding schedule in your area, please check the official Eskom website or contact Eskom directly at 0860 037 566.
+
+Based on:
+Electricity Consumptive Tariffs 2026/27 (with 2025/26 comparison)
+Electricity Supply By-law, 2010
+How to Report an Electricity Fault
+Understanding Residential Electricity Tariffs in Cape Town 2026/27",
+U007,None of the street lights are working on our whole street,report,report,Street Lights - All Lights Out,All Lights Out,ask_location,ask_location,,1.3,Thanks. Where is the problem? Please give the street and the suburb.,
+U008,There is one street light out in front of my house at 22 Sixth Avenue Lotus River,report,report,Street Lights - Single Light Out,Street Lights - Single Light Out,draft,draft,LOTUS RIVER,1.1,"I've prepared draft request number 5.
+
+Problem: Street Lights - Single Light Out
+Where: 22 Sixth Avenue, Lotus River
+Handled by: Electricity Generation and Distribution
+Usually resolved in: 1–3 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U009,the streetlight by the corner keeps flickering on and off,report,report,Street Lights - Single Light Out,Flickering Lights,ask_location,ask_location,,2.3,Thanks. Where is the problem? Please give the street and the suburb.,
+U010,"Water is gushing out of the road outside my house, it's been running all morning",report,report,Leak In Road/ Pavement/ Underground,Leak In Road/ Pavement/ Underground,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U011,A pipe has burst in Philippi and there is water everywhere,report,report,Burst Pipe,Burst Pipe,draft,draft,PHILIPPI,1.8,"I've prepared draft request number 6.
+
+Problem: Burst Pipe
+Where: Philippi
+Handled by: Distribution Services
+Usually resolved in: Same day (under 1 day) (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U012,Water dripping from the meter box at my gate,report,report,Leak at Water Meter / Stopcock,Meter Leak,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U013,"No water at all coming out of the taps since this morning, 8 Rosewood Street Bonteheuwel",report,report,No Water Supply,No Water Supply,draft,draft,BONTEHEUWEL,1.2,"I've prepared draft request number 7.
+
+Problem: No Water Supply
+Where: 8 Rosewood Street, Bonteheuwel
+Handled by: Distribution Services
+Usually resolved in: Same day (under 1 day) (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U014,"our water pressure is very low, can barely fill a kettle",report,report,Low Water Pressure,Low Water Pressure,ask_location,ask_location,,1.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U015,my water management device is not giving me any water,report,report,No Water WMD,No Water WMD,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U016,the WMD at my property is leaking,report,report,Leak at WMD Meter,Leak at WMD Meter,ask_location,ask_location,,1.5,Thanks. Where is the problem? Please give the street and the suburb.,
+U017,Water has been running down the street from a leak for weeks and nobody has come,report,report,Water Run to Waste,Leak In Road/ Pavement/ Underground,ask_location,ask_location,,0.9,Thanks. Where is the problem? Please give the street and the suburb.,
+U018,The refuse truck didn't collect our bins again this week,report,report,Non-Collection of 240L Bin,Non-Collection of 240L Bin,ask_location,ask_location,,1.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U019,Someone stole my wheelie bin,report,report,Stolen Bins - 240L,Stolen Bins - 240L,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U020,My bin's lid is broken off and the wheels have come off,report,report,Damaged Bin - 240L,Damaged Bin - 240L,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U021,People keep dumping rubble and rubbish on the open ground next to our street in Tafelsig,report,report,Illegal Dumping,Illegal Dumping,draft,draft,TAFELSIG,1.1,"I've prepared draft request number 8.
+
+Problem: Illegal Dumping
+Where: Tafelsig
+Handled by: Solid Waste Management
+Usually resolved in: Over 14 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U022,There's a huge pothole in the road that has already damaged two cars,report,report,Pothole&Defect Road Foot Bic Way/Kerbs,Pothole&Defect Road Foot Bic Way/Kerbs,ask_location,ask_location,,2.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U023,the stormwater drain on the corner is completely blocked and the road floods when it rains,report,report,Block Pipe/Chan/Canal/Drain/Gully/Manh,Storm Water Ingress,ask_location,other,,1.0,"If this is an emergency such as a fire or flooding, call the City now on 021 480 7700.
+
+Thanks. Where is the problem? Please give the street and the suburb.",
+U024,"The pavement outside my house is cracked and uneven, someone is going to trip",report,report,Pothole&Defect Road Foot Bic Way/Kerbs,Pothole&Defect Road Foot Bic Way/Kerbs,ask_location,ask_location,,1.3,Thanks. Where is the problem? Please give the street and the suburb.,
+U025,There is a big tree branch hanging over the road and it looks like it will fall,report,report,Tree Trimming / Pruning,Branch Removal (Fallen/Broken),ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U026,my prepaid meter screen is completely blank,report,report,PPM Display Blank,PPM Display Blank,ask_location,ask_location,,1.9,Thanks. Where is the problem? Please give the street and the suburb.,
+U027,the prepaid meter won't accept the voucher code I bought,report,report,PPM Rejecting Code,PPM Rejecting Code,ask_location,ask_location,,0.9,Thanks. Where is the problem? Please give the street and the suburb.,
+U028,my electricity meter is beeping and showing an error,report,report,PPM Faulty Mode,PPM Keypad Faulty,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U029,"Our water was cut off because of arrears but we have paid now, can it be reconnected",report,report,Customer : Reconnection Request,Customer : Reconnection Request,ask_location,ask_location,,1.4,Thanks. Where is the problem? Please give the street and the suburb.,
+U030,"I think my water bill is wrong, the reading seems far too high",report,report,Customer : Meter Reading/Consumption,Incorrect Reading/Request Actual Reading,ask_location,ask_location,,2.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U031,I need a copy of my invoice emailed to me,report,question,E - Billing Invoices,,ask_location,not_covered,,1.1,"I couldn't find that in the City documents I have. For help, call 0860 103 089 or visit www.capetown.gov.za/servicerequests.",
+U032,our septic tank needs emptying,report,report,Empty Septic Tank,Empty Septic Tank,ask_location,ask_location,,1.4,Thanks. Where is the problem? Please give the street and the suburb.,
+U033,I'm a City tenant and the tap in my kitchen has been leaking for a month,report,report,Plumbing,Tap Defective,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U034,the door frame in my council flat is rotten and needs fixing,report,report,Carpentry,Carpentry,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U035,"I reported a problem two weeks ago and nothing has happened, I want to escalate it",report,question,Escalated Query - Level 1,,ask_location,answer_with_sources,,1.9,"I’m sorry to hear that nothing has happened yet.  
+Could you tell me the exact problem you reported and the street and suburb where it is located? That way I can help you draft a proper service request.
+
+Based on:
+Guide to Reporting a Pothole
+Service Request Reporting Guide
+Tips for Logging a Service Request",
+U036,my tap is leaking,report,report,,Tap Defective,ask_problem,ask_location,,2.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U037,there's a problem with the water,report,report,,Water,ask_problem,ask_location,,2.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U038,how long does it usually take to fix a blocked sewer?,question,question,,,answer_with_sources,answer_with_sources,,1.8,"A blocked sewer is usually cleared within 24 to 72 hours, depending on the cause and complexity of the blockage. [1]
+
+Sources:
+[1] Budget 2026/27 Annexure 18: Schedule of Service Delivery Standards, page 3",
+U039,who is responsible for fixing a leak on my side of the water meter?,question,question,,,answer_with_sources,answer_with_sources,,1.5,"The owner of the property is responsible for fixing any leaks on their side of the water meter. If you don’t repair the leak, the City may fine you, charge for the water wasted and could restrict your supply. [1]
+
+Sources:
+[1] Water By-law Summary Guideline (2010 By-law and 2018 Amendment), page 13",
+U040,what is the current electricity tariff for a domestic customer?,question,question,,,answer_with_sources,answer_with_sources,,2.2,"The current Domestic Tariff for a residential customer is:
+
+- **Monthly service and wires charge**: R65.02 plus VAT (R74.77) billed as a daily rate of R2.14 plus VAT (R2.46) per day since the previous purchase.  
+- **Block 1 (0–600 kWh per month)**: 359.82 c/kWh plus VAT (R413.79 c/kWh).  
+- **Block 2 (above 600 kWh per month)**: 429.48 c/kWh plus VAT (R493.90 c/kWh).  
+
+These rates are for the 2025/26 tariff year and will increase by about 6 % in 2026/27. [1]
+
+Sources:
+[1] Understanding Residential Electricity Tariffs in Cape Town 2026/27, page 2",
+U041,can I put garden waste in my wheelie bin?,question,question,,,answer_with_sources,answer_with_sources,,1.7,"I’m sorry, but the City’s Integrated Waste Management By‑law says that garden waste should be composted on the property, stored in a compost heap or suitable bags, or taken to a licensed waste disposal facility. It does not allow garden waste to be placed in a wheelie bin. If you need a different bin or have questions about how to dispose of garden waste, you can contact the Urban Waste Management department through the official channels listed in the reporting guide.
+
+Based on:
+How to Report Uncollected Refuse or Request a New Bin
+Integrated Waste Management By-law, 2009
+Service Request Reporting Guide",
+U042,Is the City responsible for the tree in my garden?,question,question,,,answer_with_sources,answer_with_sources,,2.2,"The City is not responsible for maintaining trees on your private property.  
+Under the Electricity Supply By‑law, the owner or occupier must limit the height of trees or branches near overhead lines and provide protection if needed. If the owner fails to do so, the Service Provider (the City) may trim the trees after giving written notice or in an emergency.  
+So the City will only act if you do not comply with those requirements. [1]
+
+Sources:
+[1] Electricity Supply By-law, 2010, page 8",
+U043,what is the meaning of life,out_of_scope,question,,,not_covered,not_covered,,1.1,"I couldn't find that in the City documents I have. For help, call 0860 103 089 or visit www.capetown.gov.za/servicerequests.",
+U044,how do I apply for a South African passport?,out_of_scope,question,,,not_covered,not_covered,,1.1,"I couldn't find that in the City documents I have. For help, call 0860 103 089 or visit www.capetown.gov.za/servicerequests.",
+U045,what will my water bill be next month?,question,question,,,not_covered,answer_with_sources,,1.5,"I’m sorry, but I don’t have enough information to calculate your next month’s water bill. To find out your exact amount, please check your most recent bill or contact the City of Cape Town Water Services directly. They can provide a detailed breakdown based on your usage and account details.
+
+Based on:
+Water and Sanitation Restriction Tariffs, Level 3 (2026/27)",
+U046,Daar is 'n pyp wat gebars het in my straat,report,report,Burst Pipe,Pipe Burst,ask_location,ask_location,,1.8,Thanks. Where is the problem? Please give the street and the suburb.,
+U047,Amanzi ayaphuma endleleni,report,report,Leak In Road/ Pavement/ Underground,Leak In Road/ Pavement/ Underground,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U048,THERE IS SEWAGE IN MY HOUSE THIS IS AN EMERGENCY PLEASE HELP,report,report,Sewer: Blocked/Overflow,Sewer: Blocked/Overflow,ask_location,other,,1.1,"If this is an emergency such as a fire or flooding, call the City now on 021 480 7700.
+
+Thanks. Where is the problem? Please give the street and the suburb.",
+U049,"sewage everywhere, kids can't play outside, 3rd time this month, 45 Mzamo Street Langa, please send someone",report,report,Sewer: Blocked/Overflow,Sewer: Blocked/Overflow,draft,draft,LANGA,1.2,"I've prepared draft request number 9.
+
+Problem: Sewer: Blocked/Overflow
+Where: 45 Mzamo Street, Langa
+Handled by: Distribution Services
+Usually resolved in: Same day (under 1 day) (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U050,hi,greeting,question,,,ask_problem,not_covered,,1.1,"I couldn't find that in the City documents I have. For help, call 0860 103 089 or visit www.capetown.gov.za/servicerequests.",
+U051,electricity box bursted,report,report,PPM Burning/Burning Smell,Electrical,ask_location,ask_location,,1.3,Thanks. Where is the problem? Please give the street and the suburb.,
+U052,electricity trips home -31 Ny 103 Gugulethu,report,report,PPM Tripping,PPM Tripping,draft,draft,GUGULETU,1.1,"I've prepared draft request number 10.
+
+Problem: PPM Tripping
+Where: 31 Ny 103, Guguletu
+Handled by: Electricity Generation and Distribution
+Usually resolved in: Same day (under 1 day) (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U053,rubbish not collected now for days behind Mabandla shop and there are rats coming out everywhere,report,report,Non-Collection of 240L Bin,Litter Bins Not Serviced,ask_location,ask_location,,1.2,"I couldn't find ""Mabandla"" among Cape Town's suburbs. Could you check the spelling, or give a nearby suburb?",
+U054,hi help me,greeting,question,,,ask_problem,answer_with_sources,,1.5,"I’m here to help! Could you tell me what the problem is and where it’s happening (street and suburb)?
+
+Based on:
+Service Guidelines and Standards for Water and Sanitation, Version 3.3
+Service Request Reporting Guide
+Water By-law Summary Guideline (2010 By-law and 2018 Amendment)",
+U055,animal is dead by the road by Phillipi rank,report,report,Animal Carcass Removal - Dog - Large,,ask_location,ask_problem,,1.8,"I'd like to help you report this. Could you describe the problem in a bit more detail, for example what is broken, leaking or missing?",
+U056,"my electricity bill is double what it usually is, I think the meter is faulty",report,report,PPM Faulty Mode,PPM Faulty (Enter detailed description),ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U057,I want to speak to a person,question,question,,,answer_with_sources,answer_with_sources,,1.8,"I can help you get in touch with a City of Cape Town representative.  
+You can call the main call centre at **0860 103 089** (option 1) or use the **WhatsApp** number **060 018 1505** for water and electricity queries. If you prefer email, send a message to **water@capetown.gov.za**.  
+Let me know which channel you’d like to use, or if you need a different department.
+
+Based on:
+Budget 2026/27 Annexure 18: Schedule of Service Delivery Standards
+General Contact Channels for Service Requests
+Water By-law Summary Guideline (2010 By-law and 2018 Amendment)
+Water and Sanitation Services Policy",
+U058,how can I report a pathhole that damaged my car. Can I also clam and where,question,question,,,answer_with_sources,answer_with_sources,,1.3,"I can help you report the pothole. Could you tell me the street name and suburb where it is? Once I have that, I’ll give you the official reporting options.
+
+Based on:
+Guide to Reporting Faulty Traffic Lights
+Guide to Reporting a Pothole
+How to Report a Pothole",
+U059,I want a bigger bin. Where can I get it,question,question,,,answer_with_sources,answer_with_sources,,1.4,"I can help you request a larger bin. Could you tell me the street and suburb where you’d like the bin installed?
+
+Based on:
+Budget 2026/27 Annexure 4: Revised Consumptive Tariffs, Rates and Charges
+How to Report Uncollected Refuse or Request a New Bin
+Integrated Waste Management By-law, 2009
+Service Request Reporting Guide",
+U060,the kerb outside the driveway is broken and scraping cars,report,report,Pothole&Defect Road Foot Bic Way/Kerbs,Pothole&Defect Road Foot Bic Way/Kerbs,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U061,one light is out in the pole near the shops,report,report,Street Lights - Single Light Out,Street Lights - Single Light Out,ask_location,ask_location,,1.6,Thanks. Where is the problem? Please give the street and the suburb.,
+U062,the street lights in our road come on during the day and go off at night,report,question,Street Lights - ON,,ask_location,answer_with_sources,,1.6,"I’m sorry to hear about the street lights. Could you let me know the street name and suburb where this is happening?
+
+Based on:
+General Contact Channels for Service Requests
+Guide to Reporting Faulty Traffic Lights
+How to Report an Electricity Fault
+Service Request Reporting Guide",
+U063,there is a funny burning smell coming from the plugs in my kitchen,question,report,,PPM Burning/Burning Smell,check,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U064,the wheels of my bin came off and now it cannot move,report,report,Damaged Bin - 240L,Damaged Bin - 240L,ask_location,ask_location,,2.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U065,my prepaid meter says 'tamper error' and i haven't touched anything,report,report,PPM Faulty Mode,Tampering,ask_location,ask_location,,1.8,Thanks. Where is the problem? Please give the street and the suburb.,
+U066,there is a dip in the road where the tar has sunk,report,report,Pothole&Defect Road Foot Bic Way/Kerbs,Pothole&Defect Road Foot Bic Way/Kerbs,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U067,can the city send someone to sweep the leaves in our street? They blocking the drain,report,report,Block Pipe/Chan/Canal/Drain/Gully/Manh,Street Sweeping,ask_location,ask_location,,1.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U068,there is rubble and building material dumped on the field next to isikolo,report,report,Illegal Dumping,Illegal Dumping,ask_location,ask_location,,0.9,Thanks. Where is the problem? Please give the street and the suburb.,
+U069,the public bin at the taxi rank is overflowing,report,report,Litter Bins Not Serviced,Litter Bins Not Serviced,ask_location,ask_location,,1.3,Thanks. Where is the problem? Please give the street and the suburb.,
+U070,a rock has fallen onto the road after the rain and blocking one lane,report,report,Contam Spill / Rock mud verge collapsing,Contam Spill / Rock mud verge collapsing,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U071,there is a dead dog in the main road of Phillipi,report,report,Animal Carcass Removal - Dog - Large,Animal Carcass Removal - Dog - Large,ask_location,draft,PHILIPPI,1.2,"I've prepared draft request number 11.
+
+Problem: Animal Carcass Removal - Dog - Large
+Where: main road, Philippi
+Handled by: Solid Waste Management
+Usually resolved in: 1–3 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U072,my house has no power but the neighbours all have power,report,report,No Power,No Power,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U073,there is a cable hanging down from the pole outside my house,report,report,Wires Down,Cable Exposed,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U074,there is oil all over the road and slippery near Gugulethu taxi rank,report,report,Contam Spill / Rock mud verge collapsing,Contam Spill / Rock mud verge collapsing,ask_location,draft,GUGULETU,1.3,"I've prepared draft request number 12.
+
+Problem: Contam Spill / Rock mud verge collapsing
+Where: Gugulethu taxi rank, Guguletu
+Handled by: Roads Infrastructure Management
+Usually resolved in: 1–3 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U075,i dont know who to contact about something that happened,report,question,,,ask_problem,answer_with_sources,,1.4,"I’m happy to help you get the right help. Could you tell me what the problem is (e.g. a water leak, traffic light issue, electricity fault, etc.) and where it’s happening (street and suburb)?
+
+Based on:
+Guide to Reporting Faulty Traffic Lights
+How to Report a Water Leak
+How to Report an Electricity Fault
+Integrated Waste Management By-law, 2009
+Service Request Reporting Guide",
+U076,can someone tell me what documents i need to renew my license,question,question,,,not_covered,not_covered,,1.1,"I couldn't find that in the City documents I have. For help, call 0860 103 089 or visit www.capetown.gov.za/servicerequests.",
+U077,my meter screen is blank and i cant see how much electricity is left,report,report,PPM Display Blank,PPM Display Blank,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U078,the road is breaking up and there are pieces all over,report,report,Pothole&Defect Road Foot Bic Way/Kerbs,Pothole&Defect Road Foot Bic Way/Kerbs,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U079,what number do i call for an ambulance,out_of_scope,question,,,not_covered,answer_with_sources,,2.0,"I’m sorry, but the passages you provided don’t include the ambulance contact number. For an ambulance, please call the emergency number listed in the general contact channels: 021 480 7700. If you need immediate medical assistance, dial that number right away.
+
+Based on:
+General Contact Channels for Service Requests
+Guide to Reporting Faulty Traffic Lights
+Tips for Logging a Service Request",
+U080,good morning,greeting,question,,,ask_problem,not_covered,,1.1,"I couldn't find that in the City documents I have. For help, call 0860 103 089 or visit www.capetown.gov.za/servicerequests.",
+U081,"The sewer drain in front of 42 Main Road, Wynberg is overflowing into the street.",report,report,Sewer: Blocked/Overflow,Sewer: Blocked/Overflow,draft,draft,WYNBERG,1.0,"I've prepared draft request number 13.
+
+Problem: Sewer: Blocked/Overflow
+Where: 42 Main Road, Wynberg
+Handled by: Distribution Services
+Usually resolved in: Over 14 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U082,Raw sewage is backing up into my bathroom sink.,report,report,Sewer: Blocked/Overflow,Sewer: Blocked/Overflow,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U083,There is foul-smelling water leaking from the manhole near the park in Bellville.,report,report,Sewer: Blocked/Overflow,Sewer: Foul Smell,draft,draft,BELLVILLE CBD,1.1,"I've prepared draft request number 14.
+
+Problem: Sewer: Foul Smell
+Where: near the park, Bellville Cbd
+Handled by: Distribution Services
+Usually resolved in: 1–3 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U084,My toilet won't flush because the main drain seems clogged.,report,report,Sewer: Blocked/Overflow,Sewer: Blocked/Overflow,ask_location,ask_location,,1.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U085,"Water is gushing out from under the pavement near 15 Church Street, Durbanville.",report,report,Leak In Road/ Pavement/ Underground,Leak In Road/ Pavement/ Underground,draft,draft,DURBANVILLE,1.2,"I've prepared draft request number 15.
+
+Problem: Leak In Road/ Pavement/ Underground
+Where: 15 Church Street, Durbanville
+Handled by: Distribution Services
+Usually resolved in: Over 14 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U086,A pipe underground seems to have burst on the corner of 5th Avenue and Oak Street in Grassy Park.,report,report,Burst Pipe,Pipe Burst,draft,draft,GRASSY PARK,1.3,"I've prepared draft request number 16.
+
+Problem: Pipe Burst
+Where: 5th Avenue and Oak Street, Grassy Park
+Handled by: Distribution Services
+Usually resolved in: 4–14 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U087,Water is leaking around the base of my water meter box outside my property.,report,report,Leak at Water Meter / Stopcock,Leak at Water Meter / Stopcock,ask_location,ask_location,,0.9,Thanks. Where is the problem? Please give the street and the suburb.,
+U088,Clean water has been running down our driveway since yesterday afternoon.,report,report,Water Run to Waste,Leak In Road/ Pavement/ Underground,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U089,There is water leaking into my property from the municipal water pipe in the street.,report,report,Leak In Road/ Pavement/ Underground,Leak In Road/ Pavement/ Underground,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U090,"There is no water coming from any tap in our house at 88 Victoria Road, Woodstock.",report,report,No Water Supply,No Water Supply,draft,draft,WOODSTOCK,1.1,"I've prepared draft request number 17.
+
+Problem: No Water Supply
+Where: 88 Victoria Road, Woodstock
+Handled by: Distribution Services
+Usually resolved in: Same day (under 1 day) (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U091,We have completely lost water supply in Parow East since 10 AM.,report,report,No Water Supply,No Water Supply,draft,draft,PAROW EAST,1.1,"I've prepared draft request number 18.
+
+Problem: No Water Supply
+Where: Parow East
+Handled by: Distribution Services
+Usually resolved in: Same day (under 1 day) (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U092,"The water pressure in our area dropped suddenly, now it's just a light trickle.",report,report,Low Water Pressure,Low Water Pressure,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U093,Our tap water pressure is too low to run the washing machine.,report,report,Low Water Pressure,Low Water Pressure,ask_location,ask_location,,0.9,Thanks. Where is the problem? Please give the street and the suburb.,
+U094,My water management device screen displays an error code and cut off our daily allocation.,report,report,No Water WMD,Leak at WMD Meter,ask_location,ask_location,,0.9,Thanks. Where is the problem? Please give the street and the suburb.,
+U095,The water meter at 31 Sunset Boulevard is leaking badly from the valve.,report,report,Leak at WMD Meter,Leak at Valve,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U096,People are letting water run to waste from an open fire hydrant near the taxi rank in Mitchells Plain.,report,report,Water Run to Waste,Fire Hydrant Defective,draft,draft,MITCHELLS PLAIN CBD,1.1,"If this is an emergency such as a fire or flooding, call the City now on 021 480 7700.
+
+I've prepared draft request number 19.
+
+Problem: Fire Hydrant Defective
+Where: near the taxi rank, Mitchells Plain Cbd
+Handled by: Distribution Services
+Usually resolved in: 4–14 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U097,Our conservancy tank is full and needs an urgent honey sucker service.,report,report,Empty Septic Tank,Empty Septic Tank,ask_location,ask_location,,0.9,Thanks. Where is the problem? Please give the street and the suburb.,
+U098,"Can someone come drain the septic tank at plot 14, Kraaifontein?",report,report,Empty Septic Tank,Empty Septic Tank,draft,draft,KRAAIFONTEIN,1.2,"I've prepared draft request number 20.
+
+Problem: Empty Septic Tank
+Where: plot 14, Kraaifontein
+Handled by: Distribution Services
+Usually resolved in: Over 14 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U099,"The power went off at 12 Meerlust Street, Somerset West, but the rest of the street has lights.",report,report,No Power,No Power,draft,draft,SOMERSET WEST,2.0,"I've prepared draft request number 21.
+
+Problem: No Power
+Where: 12 Meerlust Street, Somerset West
+Handled by: Electricity Generation and Distribution
+Usually resolved in: Same day (under 1 day) (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U100,The main circuit breaker on the pole outside my house tripped and won't reset.,report,report,No Power,PPM Tripping,ask_location,ask_location,,1.9,Thanks. Where is the problem? Please give the street and the suburb.,
+U101,All the streetlights along Strand Street in the CBD are on in broad daylight.,report,question,Street Lights - ON,,ask_location,answer_with_sources,,1.5,"I can help you draft a service request for that issue. Could you tell me the suburb where Strand Street is located?
+
+Based on:
+Guide to Reporting Faulty Traffic Lights
+Service Request Reporting Guide",
+U102,"Entire block is in darkness on Regent Road, Sea Point – all streetlights are out.",report,report,Street Lights - All Lights Out,Street Lights - All Lights Out,draft,draft,SEA POINT,1.1,"I've prepared draft request number 22.
+
+Problem: Street Lights - All Lights Out
+Where: Regent Road, Sea Point
+Handled by: Electricity Generation and Distribution
+Usually resolved in: 1–3 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U103,The streetlight pole in front of 73 Klipfontein Road is dark and makes the area unsafe at night.,report,report,Street Lights - Single Light Out,Street Lights - Single Light Out,ask_location,draft,KALKFONTEIN,1.1,"I've prepared draft request number 23.
+
+Problem: Street Lights - Single Light Out
+Where: 73 Klipfontein Road, Kalkfontein
+Handled by: Electricity Generation and Distribution
+Usually resolved in: 1–3 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U104,A streetlight in our lane keeps flickering constantly every few seconds.,report,report,Street Lights - Single Light Out,Flickering Lights,ask_location,ask_location,,0.9,Thanks. Where is the problem? Please give the street and the suburb.,
+U105,"The prepaid electricity meter won't turn on at all, display is completely dead.",report,report,PPM Display Blank,PPM Display Blank,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U106,I bought electricity tokens via online banking but the meter says invalid code.,report,report,PPM Rejecting Code,PPM Rejecting Code,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U107,My electricity meter is making a high-pitched buzzing noise and showing a red light.,report,report,PPM Faulty Mode,PPM Faulty Mode,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U108,The cover of the electrical box on the corner of 2nd Avenue is hanging open with wires exposed.,report,report,Cable Exposed,Cable Exposed,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U109,"Power was restored after load shedding, but half of our house has no electricity.",report,report,No Power,Electrical,ask_location,ask_location,,1.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U110,I need my electricity service reconnected following payment of my overdue account.,report,report,Reconnect (Non - Payment),Reconnect (Non - Payment),ask_location,ask_location,,1.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U111,The street light pole outside number 10 was hit by a vehicle and is leaning dangerously.,report,report,Pole Knocked: Motor Vehicle Accident,Pole Knocked: Motor Vehicle Accident,ask_location,ask_location,,1.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U112,The refuse collection truck missed our side of the street today in Rondebosch.,report,report,Non-Collection of 240L Bin,Non Collection of Recycling,draft,draft,RONDEBOSCH,1.2,"I've prepared draft request number 24.
+
+Problem: Non Collection of Recycling
+Where: Rondebosch
+Handled by: Solid Waste Management
+Usually resolved in: 1–3 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U113,My black 240L wheelie bin was stolen from the kerb after collection yesterday.,report,report,Stolen Bins - 240L,Stolen Bins - 240L,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U114,"My wheelie bin has a cracked side and one wheel missing, can I get a replacement?",report,report,Damaged Bin - 240L,Damaged Bin - 240L,ask_location,ask_location,,1.9,Thanks. Where is the problem? Please give the street and the suburb.,
+U115,Construction workers dumped a pile of concrete and soil on the greenbelt behind my house.,report,report,Illegal Dumping,Illegal Dumping,ask_location,ask_location,,1.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U116,Illegal dumping of household rubbish on the pavement at the corner of 10th Avenue and Retief Street.,report,report,Illegal Dumping,Illegal Dumping,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U117,Someone dumped bags of garden refuse on the open field in Khayelitsha.,report,report,Illegal Dumping,Garden Refuse - Ad Hoc,draft,draft,KHAYELITSHA,1.1,"I've prepared draft request number 25.
+
+Problem: Garden Refuse - Ad Hoc
+Where: Khayelitsha
+Handled by: Solid Waste Management
+Usually resolved in: Over 14 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U118,The public dustbin at the bus stop is overflowing and rubbish is blowing everywhere.,report,report,Litter Bins Not Serviced,Litter Bins Not Serviced,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U119,There is a deep pothole on Franschhoek Drive that is going to pop a tire.,report,report,Pothole&Defect Road Foot Bic Way/Kerbs,Pothole&Defect Road Foot Bic Way/Kerbs,ask_location,ask_location,,1.1,"I couldn't find ""Franschhoek"" among Cape Town's suburbs. Could you check the spelling, or give a nearby suburb?",
+U120,The asphalt on the corner of Marine Drive and Beach Road is crumbling badly.,report,report,Pothole&Defect Road Foot Bic Way/Kerbs,Pothole&Defect Road Foot Bic Way/Kerbs,ask_location,draft,SEA POINT,2.0,"I've prepared draft request number 26.
+
+Problem: Pothole&Defect Road Foot Bic Way/Kerbs
+Where: Marine Drive and Beach Road, Sea Point
+Handled by: Roads Infrastructure Management
+Usually resolved in: Over 14 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U121,The stormwater drain outside 54 Voortrekker Road is clogged with leaves and rubbish.,report,report,Block Pipe/Chan/Canal/Drain/Gully/Manh,Gulley Blocked,ask_location,draft,MOWBRAY,1.2,"I've prepared draft request number 27.
+
+Problem: Gulley Blocked
+Where: Voortrekker Road, Mowbray
+Handled by: Distribution Services
+Usually resolved in: 1–3 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U122,"During heavy rain, the drain on our corner overflows and floods the road completely.",report,report,Block Pipe/Chan/Canal/Drain/Gully/Manh,Flooding Road/Property/Informal Set,ask_location,other,,1.2,"If this is an emergency such as a fire or flooding, call the City now on 021 480 7700.
+
+Thanks. Where is the problem? Please give the street and the suburb.",
+U123,The pavement kerb outside my driveway was damaged by road construction equipment.,report,report,Pothole&Defect Road Foot Bic Way/Kerbs,Pothole&Defect Road Foot Bic Way/Kerbs,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U124,A stop sign on the corner of 4th Avenue and Main Street was knocked down and is lying on the ground.,report,report,Paint Markings Lines&Signs,Accident Damaged,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U125,The manhole cover on the road in Kuils River is missing and leaves an open pit.,report,report,Sewer: Manhole Cover: Stolen/Missing,Manhole Cover Missing,ask_location,ask_location,,1.2,"I couldn't find ""Kuils River"" among Cape Town's suburbs. Could you check the spelling, or give a nearby suburb?",
+U126,Large tree branches are interfering with low-hanging power lines on First Avenue.,report,report,Tree Trimming / Pruning,Wires Down,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U127,A dead tree in the municipal park behind 28 Aloe Street looks like it might collapse.,report,report,Tree Trimming / Pruning,Tree Complaint,ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U128,The grass in the neighborhood park in Goodwood is overgrown and needs mowing.,report,report,Mowing,Mowing,ask_location,ask_location,,2.1,"I couldn't find ""Goodwood"" among Cape Town's suburbs. Could you check the spelling, or give a nearby suburb?",
+U129,Playground equipment at the local park has sharp broken metal parts.,report,report,Repair of play park equipment,Repair of play park equipment,ask_location,ask_location,,1.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U130,Can the City trim the municipal tree branches that are extending over my roof?,report,question,Tree Trimming / Pruning,,ask_location,answer_with_sources,,1.6,"I can help you draft a service request.  
+Could you tell me the street and suburb where the tree branches are extending over your roof?
+
+Based on:
+Electricity Supply By-law, 2010
+Service Request Reporting Guide",
+U131,"I submitted my monthly water meter reading online, can you confirm it was received?",report,question,Customer : Meter Reading/Consumption,,ask_location,answer_with_sources,,1.7,"I’m not able to check the status of your online meter reading.  
+To confirm receipt, please contact the City through one of the official channels listed in the Water By‑law summary:  
+
+- Online at www.capetown.gov.za/servicerequests  
+- Email water@capetown.gov.za  
+- SMS 31373 (max 160 characters)  
+- Call 0860 103 089  
+- Visit a Customer Interaction Centre (list at www.capetown.gov.za/facilities)  
+
+Make sure you have your reference number handy for a quicker response.
+
+Based on:
+Budget 2026/27 Annexure 18: Schedule of Service Delivery Standards
+Water By-law Summary Guideline (2010 By-law and 2018 Amendment)",
+U132,My municipal rates bill shows a charge for an extra refuse bin that I don't have.,report,report,E - Billing Invoices,Billing Discrepancy,ask_location,ask_location,,1.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U133,I haven't received my monthly rates account statement for August yet.,report,report,E - Billing Invoices,Account Queries,ask_location,ask_location,,1.0,Thanks. Where is the problem? Please give the street and the suburb.,
+U134,I am a tenant in a City flat at 14 Lavender Hill and the kitchen window latch is broken.,report,report,Carpentry,Corrective Work,draft,draft,LAVENDER HILL,1.9,"I've prepared draft request number 28.
+
+Problem: Corrective Work
+Where: 14 Lavender Hill, Lavender Hill
+Handled by: Property Management
+Usually resolved in: 1–3 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U135,The roof on our council housing unit in Hanover Park is leaking during rainstorms.,report,report,Plumbing,Main Leak,draft,draft,HANOVER PARK,1.1,"I've prepared draft request number 29.
+
+Problem: Main Leak
+Where: Hanover Park
+Handled by: Distribution Services
+Usually resolved in: 4–14 days (based on the City's 2020 records; an indication, not a promise)
+
+This draft has not been sent to the City and is not a City reference number. To log it officially, call 0860 103 089 or use www.capetown.gov.za/servicerequests.",
+U136,"I have a reference number 91028374 for a blocked drain logged last week, can I get an update?",report,question,Escalated Query - Level 1,,ask_location,answer_with_sources,,1.4,"I’m sorry, but I don’t have access to the City’s service request system to check the status of reference number 91028374.  
+For an update, please contact the City’s customer call centre at 0860 103 089 or email contact.us@capetown.gov.za, or log in to the self‑help service website at www.capetown.gov.za/servicerequests and enter your reference number.
+
+Based on:
+Budget 2026/27 Annexure 18: Schedule of Service Delivery Standards
+Guide to Reporting a Blocked Stormwater Drain
+Tips for Logging a Service Request",
+U137,"My service request for a pothole repair was marked closed, but the pothole is still there.",report,report,Escalated Query - Level 1,Pothole&Defect Road Foot Bic Way/Kerbs,ask_location,ask_location,,1.3,Thanks. Where is the problem? Please give the street and the suburb.,
+U138,I want to escalate my complaint about streetlights because it has been 3 weeks without action.,report,question,Escalated Query - Level 1,,ask_location,answer_with_sources,,1.4,"I’m sorry to hear that. Could you tell me the street and suburb where the streetlights are not working?
+
+Based on:
+General Contact Channels for Service Requests
+Guide to Reporting Faulty Traffic Lights
+Service Request Reporting Guide",
+U139,How do I report a water leak if it's after hours?,question,question,,,answer_with_sources,answer_with_sources,,2.5,"You can still report a water leak after hours using any of the official channels listed in the passages. The quickest way is to use the online Service Request Portal at www.capetown.gov.za/servicerequests, or you can send an SMS to 31373, call the 0860 103 089 Call Centre (Option 2 for Water), send an email to water@capetown.gov.za, or use WhatsApp at 060 018 1505. All of these options are available 24 hours a day. Just include your address, a short description of the leak, and your contact number. [1]
+
+Sources:
+[1] How to Report a Water Leak, page 1",
+U140,Is the water in Muizenberg safe to drink after today's pipe repair?,question,question,,,not_covered,answer_with_sources,MUIZENBERG,1.6,"I’m not able to confirm the safety of the water after the repair. For up‑to‑date information, please contact the City of Cape Town Water and Sanitation Department directly. You can call the Call Centre at 0860 103 089 (Option 2 for Water) or email water@capetown.gov.za. They’ll be able to tell you whether the water is safe to drink.
+
+Based on:
+Budget 2026/27 Annexure 18: Schedule of Service Delivery Standards
+How to Report a Water Leak
+Water By-law Summary Guideline (2010 By-law and 2018 Amendment)
+Water By-law, 2010 (consolidated as at 20 July 2018)",
+U141,Can I request a meter check if I suspect my prepaid meter is counting too fast?,question,question,,,answer_with_sources,answer_with_sources,,1.5,"Yes, you can report a suspected faulty prepaid meter and request an inspection. A fee is payable for meter testing, which can be done at any City walk‑in Customer Interaction Centre. See the Water By‑law summary for details. [1]
+
+Sources:
+[1] Water By-law Summary Guideline (2010 By-law and 2018 Amendment), page 13",
+U142,Who do I contact if a fallen tree branch took down the service wire to my roof?,question,question,,,answer_with_sources,answer_with_sources,,2.6,"If a fallen tree branch has taken down a service wire, you should report it as an electricity fault.  
+You can contact the City of Cape Town through any of the following channels:
+
+- **Online Service Request Portal:** www.capetown.gov.za/servicerequests  
+- **Call Centre:** 0860 103 089 (Option 3 for Electricity) – available 24 hours a day  
+- **SMS:** 31220 (include your address, meter number if possible, and a short description)  
+- **WhatsApp:** 060 018 1505  
+- **Email:** power@capetown.gov.za  
+
+Make sure to give your physical address, a description of the problem (e.g., “fallen tree branch downed service wire”), and your meter or account number if you have it. This will help the service provider respond quickly.
+
+Based on:
+Electricity Supply By-law, 2010
+General Contact Channels for Service Requests
+How to Report an Electricity Fault
+Service Request Reporting Guide",
+U143,How do I apply for an extra 240L wheelie bin for my business?,question,question,,,answer_with_sources,answer_with_sources,,1.7,"To apply for an extra 240 L wheelie bin for your business, you can:
+
+1. **Online Service Request Portal** – visit www.capetown.gov.za/servicerequests  
+2. **Call Centre** – dial 0860 103 089  
+3. **Email** – send a request to wastewise.user@capetown.gov.za  
+
+When you report, include your physical address, suburb, a description of the request, and your contact number. The responsible department is Urban Waste Management. [3]
+
+Sources:
+[3] How to Report Uncollected Refuse or Request a New Bin, page 1",
+U144,What days are garden refuse drop-off sites open in Table View?,question,question,,,not_covered,answer_with_sources,TABLE VIEW,1.4,"I’m sorry, but the passages you provided don’t include the opening days for garden‑refuse drop‑off sites in Table View.  
+For that information, please check the City of Cape Town’s official website or contact the Urban Waste Management department directly.
+
+Based on:
+Budget 2026/27 Annexure 18: Schedule of Service Delivery Standards
+How to Report Uncollected Refuse or Request a New Bin
+Integrated Waste Management By-law, 2009
+Water By-law Summary Guideline (2010 By-law and 2018 Amendment)",
+U145,Can I request street sweeping for our road after the strong winds left debris everywhere?,report,report,Street Sweeping,Street Sweeping,ask_location,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U146,The traffic light at the intersection of Cape Road and Park Lane is stuck on red.,report,report,Signals out of Sync at Intersection,Stuck on Red,ask_location,ask_location,,2.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U147,The footbridge over the railway line in Athlone has a broken handrail.,report,report,,,draft,ask_problem,ATHLONE,1.2,"I'd like to help you report this. Could you describe the problem in a bit more detail, for example what is broken, leaking or missing?",
+U148,Speed bumps are desperately needed in our residential street due to drag racing.,report,report,Traffic Calming (Speedbumps),Traffic Calming (Speedbumps),ask_location,ask_location,,1.2,Thanks. Where is the problem? Please give the street and the suburb.,
+U149,How do I register as an indigent household to receive free basic services?,question,question,,,answer_with_sources,answer_with_sources,,1.9,"To register as an indigent household and receive free basic water and sanitation services, you need to follow the City’s indigence registration process. The policy states that customer registration for indigence is dealt with in accordance with City policies, including the Credit Control and Debt Collection Policy and the Water and Sanitation Services Policy.  
+
+You can apply through the City of Cape Town’s official channels:
+
+1. **Online** – Visit the City’s website and use the “Indigent Household Registration” portal.  
+2. **In‑person** – Go to your local municipal office or the Water and Sanitation Services office and fill out the indigence registration form.  
+3. **By phone** – Call the City’s customer service line (listed on the website) and request the indigence registration form.
+
+Make sure you have documentation that proves your household meets the indigence criteria (e.g., income statements, proof of pension or disability, or a letter from a social services provider). Once your application is processed, you will receive free basic services that meet the nationally determined minimum standards.  
+
+If you need more detailed instructions or have specific questions about the required documents, please let me know!
+
+Based on:
+Understanding Residential Electricity Tariffs in Cape Town 2026/27
+Water and Sanitation Services Policy",
+U150,I need to update my postal address for my municipal utility account.,question,report,,Customer Request - Change of Postal,not_covered,ask_location,,1.1,Thanks. Where is the problem? Please give the street and the suburb.,
+U151,Can I get a formal proof of address document from the City?,question,question,,,not_covered,answer_with_sources,,1.6,"I’m sorry, but the passages you provided don’t cover that.  
+For a formal proof of address you should contact the City of Cape Town’s official services – for example, the City’s website or the Customer Interaction Centres. They can guide you on the application process and any required documents.
+
+Based on:
+Budget 2026/27 Annexure 18: Schedule of Service Delivery Standards
+Budget 2026/27 Annexure 4: Revised Consumptive Tariffs, Rates and Charges
+Water By-law Summary Guideline (2010 By-law and 2018 Amendment)
+Water By-law, 2010 (consolidated as at 20 July 2018)
+Water and Sanitation Services Policy",
+U152,What is the standard response time for fixing a burst municipal water pipe?,question,question,,,answer_with_sources,answer_with_sources,,1.4,"The City of Cape Town aims to restore service for a burst municipal water pipe within 48 hours. If more than 24 hours are needed, the City will endeavour to provide an alternative basic water supply as soon as reasonably possible – Water Bylaw Section 24. [5]
+
+Sources:
+[5] Budget 2026/27 Annexure 18: Schedule of Service Delivery Standards, page 2",
+U153,How do I log a service request on behalf of an elderly neighbor?,question,question,,,answer_with_sources,answer_with_sources,,1.9,"To log a service request for your elderly neighbour, you can use the City of Cape Town’s official channels:
+
+- **Online portal (24/7):** www.capetown.gov.za/servicerequests [1]
+- **Main Call Centre:** 0860 103 089 (Option 1) [2]
+- **WhatsApp (Water and Electricity):** 060 018 1505 [2]
+- **Email (Water):** water@capetown.gov.za or (Electricity): power@capetown.gov.za [2]
+- **Specific departments:**  
+  - Roads, potholes and stormwater: 0800 656 463 or Transport.Info@capetown.gov.za [2]  
+  - Water and Sanitation: 0860 103 089 (Option 2), SMS 31373, or water@capetown.gov.za [2]  
+  - Electricity: 0860 103 089 (Option 3), SMS 31220, or power@capetown.gov.za [2]
+
+Make sure to provide a clear location (street, suburb, nearest landmark) and a detailed description of the problem. After submitting, keep the reference number for follow‑up. If it’s a life‑threatening emergency, call 021 480 7700.
+
+Sources:
+[1] Tips for Logging a Service Request, page 1
+[2] General Contact Channels for Service Requests, page 1",
+U154,Where is the nearest City customer service centre in the Southern Suburbs?,question,question,,,not_covered,answer_with_sources,,1.5,"I’m sorry, but the passages don’t list a specific City customer service centre in the Southern Suburbs. You can contact the City’s general service request line at 0860 103 089 or use the online portal at www.capetown.gov.za/servicerequests for assistance. If you need a physical location, the City’s official website or the call centre can provide that information.
+
+Based on:
+Budget 2026/27 Annexure 18: Schedule of Service Delivery Standards
+General Contact Channels for Service Requests
+Guide to Reporting Faulty Traffic Lights
+Guide to Reporting a Pothole
+Tips for Logging a Service Request",
+U155,"Good morning, can you help me log a fault please?",greeting,report,,,ask_problem,ask_problem,,1.1,"I'd like to help you report this. Could you describe the problem in a bit more detail, for example what is broken, leaking or missing?",
+U156,What time does the post office in Claremont open today?,out_of_scope,question,,,not_covered,not_covered,CLAREMONT,1.0,"I couldn't find that in the City documents I have. For help, call 0860 103 089 or visit www.capetown.gov.za/servicerequests.",
+U157,Can I renew my motor vehicle license disc through this service?,question,question,,,not_covered,answer_with_sources,,1.7,"Yes, you can renew your motor‑vehicle licence disc through the City of Cape Town’s service. The renewal process is designed to take about 5 minutes on average. If you need to start the renewal, you can do so via the official channels listed in the city’s service portal or by visiting a municipal office.
+
+Based on:
+Budget 2026/27 Annexure 18: Schedule of Service Delivery Standards",
+U158,Is load shedding suspended for the weekend in Cape Town?,question,question,,,not_covered,answer_with_sources,,1.7,"I’m not aware of any official announcement about load‑shedding being suspended for the weekend. For the most up‑to‑date information, please check the City of Cape Town’s official channels or contact the electricity service centre. You can call the electricity call centre at 0860 103 089 (Option 3) or visit the online Service Request Portal at www.capetown.gov.za/servicerequests.
+
+Based on:
+Budget 2026/27 Annexure 4: Revised Consumptive Tariffs, Rates and Charges
+Electricity Supply By-law, 2010
+General Contact Channels for Service Requests
+How to Report an Electricity Fault
+Understanding Residential Electricity Tariffs in Cape Town 2026/27",
+U159,How do I apply for a TV license online?,out_of_scope,question,,,not_covered,not_covered,,1.5,"I couldn't find that in the City documents I have. For help, call 0860 103 089 or visit www.capetown.gov.za/servicerequests.",
+U160,Thanks for your help!,closing,question,,,polite_reply,not_covered,,1.2,"I couldn't find that in the City documents I have. For help, call 0860 103 089 or visit www.capetown.gov.za/servicerequests.",

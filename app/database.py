@@ -12,6 +12,8 @@ CREATE TABLE IF NOT EXISTS messages (
     channel TEXT NOT NULL,
     role TEXT NOT NULL,
     content TEXT NOT NULL,
+    intent TEXT,
+    request_type TEXT,
     created_at TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_messages_conversation ON messages (conversation_id);
@@ -44,14 +46,14 @@ def init_db():
         conn.executescript(SCHEMA)
 
 
-def save_message(conversation_id, channel, role, content):
+def save_message(conversation_id, channel, role, content, intent=None, request_type=None):
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     with closing(_connect()) as conn:
         with conn:
             conn.execute(
-                "INSERT INTO messages (conversation_id, channel, role, content, created_at) "
-                "VALUES (?, ?, ?, ?, ?)",
-                (conversation_id, channel, role, content, now),
+                "INSERT INTO messages (conversation_id, channel, role, content, intent, "
+                "request_type, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                (conversation_id, channel, role, content, intent, request_type, now),
             )
 
 def save_draft(conversation_id, channel, request_type, department, suburb, street, band):
