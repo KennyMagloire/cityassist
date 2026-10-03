@@ -1,6 +1,7 @@
 """CityAssist backend: one FastAPI application serving the web chat and WhatsApp."""
 import gradio as gr
 from fastapi import BackgroundTasks, FastAPI, Request, Response
+from app.whatsapp import handle_message, incoming_messages, log_failed_deliveries, signature_is_valid
 from fastapi.responses import PlainTextResponse, RedirectResponse
 
 from app import config
@@ -42,7 +43,9 @@ async def whatsapp_receive(request: Request, background: BackgroundTasks):
     raw = await request.body()
     if not signature_is_valid(raw, request.headers.get("X-Hub-Signature-256")):
         return Response(status_code=403)
-    for msg in incoming_messages(await request.json()):
+    payload = await request.json()
+    log_failed_deliveries(payload)
+    for msg in incoming_messages(payload):
         background.add_task(handle_message, msg)
     return {"status": "received"}
 

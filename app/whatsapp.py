@@ -55,6 +55,13 @@ def incoming_messages(payload):
             found.extend(change.get("value", {}).get("messages", []))
     return found
 
+def log_failed_deliveries(payload):
+    """Meta reports what happened to each message we sent; log the failures."""
+    for entry in payload.get("entry", []):
+        for change in entry.get("changes", []):
+            for status in change.get("value", {}).get("statuses", []):
+                if status.get("status") == "failed":
+                    log.warning("WhatsApp delivery failed: %s", status.get("errors"))
 
 def conversation_id_for(number):
     """A stable ID per sender that does not store the phone number itself."""
