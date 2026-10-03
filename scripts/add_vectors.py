@@ -22,15 +22,14 @@ def load():
     return chunks, meta, vectors
 
 
-def check_nothing_changed(chunks, meta, vectors):
-    """Stop if any saved piece changed: its old vector would no longer match its text."""
+def drop_changed(chunks, meta, vectors):
+    """Remove saved pieces whose text changed or disappeared, so they get embedded again."""
     if len(meta) != len(vectors):
         raise SystemExit(f"meta.json has {len(meta)} rows but vectors.npy has {len(vectors)}.")
     text_by_id = {c["chunk_id"]: c["text"] for c in chunks}
-    for m in meta:
-        if text_by_id.get(m["chunk_id"]) != m["text"]:
-            raise SystemExit(f"Piece {m['chunk_id']} changed or disappeared. "
-                             "Rebuild all vectors instead of adding.")
+    keep = [i for i, m in enumerate(meta) if text_by_id.get(m["chunk_id"]) == m["text"]]
+    print(f"Removed {len(meta) - len(keep)} changed pieces.")
+    return [meta[i] for i in keep], vectors[keep]
 
 
 def embed(texts):
@@ -49,7 +48,7 @@ def embed(texts):
 
 def main():
     chunks, meta, vectors = load()
-    check_nothing_changed(chunks, meta, vectors)
+    meta, vectors = drop_changed(chunks, meta, vectors)
 
     known = {m["chunk_id"] for m in meta}
     new_chunks = [c for c in chunks if c["chunk_id"] not in known]

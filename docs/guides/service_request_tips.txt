@@ -14,4 +14,6 @@ Important Tips when Logging a Service Request with the City of Cape Town
 
 5. The City of Cape Town does not automatically know about problems. Residents need to report them.
 
-6. For life-threatening emergencies, call 021 480 7700.
+6. For fires, floods and other emergencies, call 021 480 7700.
+
+7. Water restriction levels: "Level 0" means no water restrictions are in force and the normal water tariff applies. Higher levels limit garden watering and cost more per kilolitre.

@@ -3,7 +3,7 @@ City of Cape Town - General Contact Channels for Service Requests
 Main Call Centre:
 0860 103 089
 
-WhatsApp (Water and Electricity):
+WhatsApp (Water and Sanitation):
 060 018 1505
 
 Online Service Request Portal:
@@ -24,7 +24,6 @@ Electricity:
 - Phone: 0860 103 089 (Option 3)
 - SMS: 31220
 - Email: power@capetown.gov.za
-- WhatsApp: 060 018 1505
 
 Roads, Potholes and Stormwater:
 - Phone: 0800 656 463
