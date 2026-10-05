@@ -70,7 +70,10 @@ def conversation_id_for(number):
 
 def for_whatsapp(text):
     """WhatsApp uses *single* asterisks for bold and limits message length."""
-    return
+    text = text.replace("**", "*")
+    if len(text) > MAX_REPLY_CHARS:
+        text = text[:MAX_REPLY_CHARS - 3] + "..."
+    return text
 
 
 

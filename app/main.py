@@ -1,13 +1,12 @@
 """CityAssist backend: one FastAPI application serving the web chat and WhatsApp."""
 import gradio as gr
 from fastapi import BackgroundTasks, FastAPI, Request, Response
-from app.whatsapp import handle_message, incoming_messages, log_failed_deliveries, signature_is_valid
 from fastapi.responses import PlainTextResponse, RedirectResponse
 
 from app import config
 from app.database import init_db
 from app.web_chat import CSS, THEME, build_page
-from app.whatsapp import handle_message, incoming_messages, signature_is_valid
+from app.whatsapp import handle_message, incoming_messages, log_failed_deliveries, signature_is_valid
 
 app = FastAPI(title="CityAssist")
 
