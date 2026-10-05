@@ -91,9 +91,29 @@ def add_emergency_line(message, reply):
     return reply
 
 
+DECLINE_WORDS = ("don't have", "don't include", "don't contain", "don't list", "don't mention",
+                 "do not have", "do not include", "do not contain", "not able to confirm",
+                 "couldn't find", "can't find")
+
+
+def declines(reply):
+    """True if the reply opens by saying the documents don't answer the question.
+    Only the first sentence is checked, so advice later in a real answer doesn't count."""
+    text = re.split(r"(?<=[.!?])\s", reply.strip(), maxsplit=1)[0].lower().replace("\u2019", "'")
+    return any(words in text for words in DECLINE_WORDS)
+
+
+def tidy(reply):
+    """Never mention 'passages' to the resident; they never saw any."""
+    reply = re.sub(r"passages? (\[\d+\])", r"\1", reply)
+    return re.sub(r"the passages?( you provided)?", "the City documents I have", reply)
+
+
 def add_sources(reply, passages):
     """Under the reply, list each cited document and page once, with its proper title."""
     cited = sorted({int(n) for n in re.findall(r"\[(\d+)\]", reply)})
+    if not cited and declines(reply):
+        return reply  # nothing was answered, so listing documents would mislead
     if not cited:
         places = sorted({(TITLES.get(p["document"], p["document"]), p["page"]) for p in passages})
         return reply + "\n\nBased on:\n" + "\n".join(f"{title}, page {page}" for title, page in places)
@@ -137,7 +157,7 @@ def answer_question(message, history, vector):
         log.warning("Both reply services failed (%s)", type(error).__name__)
         return FALLBACK
 
-    reply = reply.replace("the passages you provided", "the City documents I have")
+    reply = tidy(reply)
     if not cites_only_supplied(reply, len(passages)):
         log.warning("Reply cited a passage that was not supplied")
         return NOT_FOUND
