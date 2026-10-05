@@ -9,7 +9,7 @@ CityAssist is a chat assistant for City of Cape Town residents. It does two thin
 
 Live demo: https://cityassist-8sax.onrender.com (free hosting, so the first visit after a quiet period takes about a minute to wake up).
 
-**Group:** Liam (Kenny Magloire Ango), Keo, Ziyanda.
+**Group:** Kenny, Keo, Ziyanda.
 
 ---
 
