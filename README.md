@@ -1,4 +1,5 @@
 # CityAssist
+  ![Unit tests](https://github.com/KennyMagloire/cityassist/actions/workflows/tests.yml/badge.svg)
 
 CityAssist is a chat assistant for City of Cape Town residents. It does two jobs:
 
