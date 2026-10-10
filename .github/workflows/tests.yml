@@ -14,6 +14,6 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install libraries
-        run: pip install -r requirements.txt pytest
+        run: pip install -r requirements.txt pytest pdfplumber
       - name: Run the unit tests (no API keys or internet needed)
         run: python -m pytest -q tests
