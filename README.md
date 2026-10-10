@@ -1,5 +1,22 @@
 # CityAssist
-  ![Unit tests](https://github.com/KennyMagloire/cityassist/actions/workflows/tests.yml/badge.svg)
+[![Unit tests](https://github.com/KennyMagloire/cityassist/actions/workflows/tests.yml/badge.svg)](https://github.com/KennyMagloire/cityassist/actions/workflows/tests.yml)
+[![Live demo](https://img.shields.io/badge/Live%20demo-Render-46E3B7?logo=render&logoColor=white)](https://cityassist-8sax.onrender.com)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
+
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.141-009688?logo=fastapi&logoColor=white)
+![Gradio](https://img.shields.io/badge/Gradio-6.29-F97316?logo=gradio&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-gpt--oss--20b-F55036)
+![Gemini](https://img.shields.io/badge/Google%20Gemini-embeddings-8E75B2?logo=googlegemini&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9-F7931E?logo=scikitlearn&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-2.4-013243?logo=numpy&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-3.0-150458?logo=pandas&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-database-003B57?logo=sqlite&logoColor=white)
+![WhatsApp](https://img.shields.io/badge/WhatsApp-Cloud%20API-25D366?logo=whatsapp&logoColor=white)
+![pytest](https://img.shields.io/badge/tested%20with-pytest-0A9EDC?logo=pytest&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Analysis-Google%20Colab-F9AB00?logo=googlecolab&logoColor=white)
+![PyCharm](https://img.shields.io/badge/IDE-PyCharm-000000?logo=pycharm&logoColor=white)
 
 CityAssist is a chat assistant for City of Cape Town residents. It does two jobs:
 
